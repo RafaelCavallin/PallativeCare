@@ -1,0 +1,43 @@
+.navbar {
+  background-color: #89C4F4; }
+  .navbar .nav-item {
+    font-size: 1.2rem;
+    padding-right: 10px; }
+  .navbar .dropdown-menu {
+    background-color: rgba(137, 196, 244, 0.9);
+    border: none; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: black; }
+
+.custom-control {
+  margin-right: 0.5rem; }
+
+.form-group {
+  margin-bottom: 0.2rem; }
+
+#inicialSection {
+  background: url("../img/home.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px; }
+  #inicialSection .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 700px; }
+
+#ajudaSection {
+  background-color: #89C4F4; }
+
+@media (max-width: 544px) {
+  #inicialSection {
+    display: none; }
+  .md-form {
+    display: none; }
+  .sm-form {
+    display: block; } }
+
+@media (min-width: 544px) {
+  .sm-form {
+    display: none; }
+  .md-form {
+    display: block; } }
