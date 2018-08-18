@@ -18,7 +18,7 @@
                 </ul>
             </div>
         </div>
-
+        <hr>
         <div class="row">
             <!-- ESCALA -->
             <div class="col-md-12">
@@ -372,17 +372,19 @@
                             <span class="custom-control-description lead">Quase nunca</span>
                         </label>
                     </div><!-- QUESTÃO PRAZER TV -->
-                    <div class="form-group">
-                        <div class="btn-group" role="group">
-                            <button type="submit" class="btn btn-primary">Imprimir</button>
-                            <button type="reset" class="btn btn-secondary">Limpar</button>
+                    <div class="row mt-3">
+                        <div class="col-sm-12 col-md-6 form-group">
+                          <input type="submit" class="btn btn-primary btn-block" value="Enviar">
                         </div>
-                    </div>
+                        <div class="col-sm-12 col-md-6 form-group">
+                          <input type="reset" class="btn btn-danger btn-block" value="Limpar">  
+                        </div>
+                    </div> 
                 </form>
             </div><!-- ESCALA -->
         </div>
-        
-        <div class="row">
+        <hr>
+        <div class="row mt-3">
             <div class="col-md-12 my-3"> 
                 <h5 class="mb-3"><em>Presença de ansiedade ou depressão, pontuação maior ou igual a 8.</em></h5>
 

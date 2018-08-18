@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light sticky-top py-3">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top py-3">
     <div class="container">
         <a href="index.php" class="navbar-brand"><h3>Palliative Care</h3></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navBarNav"><span class="navbar-toggler-icon"></span></button>
@@ -26,6 +26,9 @@
                 </li>
                 <li class="nav-item">
                     <a href="index.php?pg=contato" class="nav-link">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.php?pg=login" class="nav-link">Acessar</a>
                 </li>
             </ul>
         </div>

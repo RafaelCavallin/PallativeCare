@@ -40,64 +40,64 @@
       </div>
 
     </div>
-
+    <hr>
     <div class="row">
-      <div class="my-4 col-md-12">
+      <div class="col-md-12">
         <form action="./teste.php" method="POST">
 
           <!-- INICIO DADOS -->
           <div class="row">
-            <div class="col-6 form-group">
-              <input type="text" class="form-control" name="paciente" placeholder="Paciente">
+            <div class="col-sm-12 col-md-6 form-group">
+              <input type="text" class="form-control" name="paciente" placeholder="Paciente" required>
             </div>
-            <div class="col-6 form-group">
-              <input type="text" class="form-control" name="prontuario" placeholder="Prontuário">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-8 form-group">
-              <input type="text" class="form-control" name="cuidador" placeholder="Cuidador">
-            </div>
-            <div class="col-4 form-group">
-              <input type="date" class="form-control" name="data" placeholder="Data">
+            <div class="col-sm-12 col-md-6 form-group">
+              <input type="text" class="form-control" name="prontuario" placeholder="Prontuário" required>
             </div>
           </div>
           <div class="row">
-            <div class="col-5 form-group">
-              <input type="text" class="form-control" name="grauParentesco" placeholder="Grau de parentesco">
+            <div class="col-sm-12 col-md-8 form-group">
+              <input type="text" class="form-control" name="cuidador" placeholder="Cuidador" required>
             </div>
-            <div class="col-3 form-group">
-              <input type="text" class="form-control" name="idade" placeholder="Idade">
+            <div class="col-sm-12 col-md-4 form-group">
+              <input type="date" class="form-control" name="data" placeholder="Data" required>
             </div>
-            <div class="col-4 form-group">
-              <input type="text" class="form-control" name="escolaridade" placeholder="Escolaridade">
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-5 form-group">
+              <input type="text" class="form-control" name="grauParentesco" placeholder="Grau de parentesco" required>
+            </div>
+            <div class="col-sm-12 col-md-3 form-group">
+              <input type="text" class="form-control" name="idade" placeholder="Idade" required>
+            </div>
+            <div class="col-sm-12 col-md-4 form-group">
+              <input type="text" class="form-control" name="escolaridade" placeholder="Escolaridade" required>
             </div>
           </div><!-- FIM DADOS -->
 
           <!-- INICIO QUESTÃO TEMPO -->
           <div class="form-group mt-4">  
             <h5>1. Sente que, por causa do tempo que utiliza com o seu familiar/doente já não tem tempo suficiente para você mesmo?</h5>
-            <label class="custom-control custom-radio">
-              <input name="radioTempo" type="radio" class="custom-control-input" value="1">
+            <label class="custom-control custom-radio d-block">
+              <input name="radioTempo" type="radio" class="custom-control-input" value="1" required>
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">1 - Nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioTempo" type="radio" class="custom-control-input" value="2">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">2 - Quase nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioTempo" type="radio" class="custom-control-input" value="3">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">3 - Às vezes</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioTempo" type="radio" class="custom-control-input" value="4">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">4 - Frequentemente</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioTempo" type="radio" class="custom-control-input" value="5">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">5 - Quase sempre</span>
@@ -107,27 +107,27 @@
           <!-- INICIO QUESTÃO STRESS -->
           <div class="form-group mt-3">  
             <h5>2. Sente-se estressado/ angustiado por ter que cuidar do seu familiar/ doente e ao mesmo tempo ser responsável por outras tarefas? (ex. Cuidar de outros familiares, ter que trabalhar).</h5>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioStress" type="radio" class="custom-control-input" value="1">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">1 - Nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioStress" type="radio" class="custom-control-input" value="2">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">2 - Quase nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioStress" type="radio" class="custom-control-input" value="3">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">3 - Às vezes</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioStress" type="radio" class="custom-control-input" value="4">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">4 - Frequentemente</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioStress" type="radio" class="custom-control-input" value="5">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">5 - Quase sempre</span>
@@ -137,27 +137,27 @@
           <!-- INICIO QUESTÃO AMIGOS -->
           <div class="form-group mt-3">  
             <h5>3. Acha que a situação atual afeta a sua relação com amigos ou outros elementos da família de uma forma negativa?</h5>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioAmigos" type="radio" class="custom-control-input" value="1">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">1 - Nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioAmigos" type="radio" class="custom-control-input" value="2">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">2 - Quase nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioAmigos" type="radio" class="custom-control-input" value="3">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">3 - Às vezes</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioAmigos" type="radio" class="custom-control-input" value="4">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">4 - Frequentemente</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioAmigos" type="radio" class="custom-control-input" value="5">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">5 - Quase sempre</span>
@@ -167,27 +167,27 @@
           <!-- INICIO QUESTÃO EXAUSTO -->
           <div class="form-group mt-3">  
             <h5>4. Sente-se exausto quando tem de estar junto do seu familiar/ doente?</h5>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioExausto" type="radio" class="custom-control-input" value="1">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">1 - Nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioExausto" type="radio" class="custom-control-input" value="2">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">2 - Quase nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioExausto" type="radio" class="custom-control-input" value="3">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">3 - Às vezes</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioExausto" type="radio" class="custom-control-input" value="4">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">4 - Frequentemente</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioExausto" type="radio" class="custom-control-input" value="5">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">5 - Quase sempre</span>
@@ -197,27 +197,27 @@
           <!-- INICIO QUESTÃO SAÚDE -->
           <div class="form-group mt-3">  
             <h5>5. Sente que sua saúde tem-se visto afetada por ter que cuidar do seu familiar/ doente?</h5>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioSaude" type="radio" class="custom-control-input" value="1">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">1 - Nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioSaude" type="radio" class="custom-control-input" value="2">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">2 - Quase nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioSaude" type="radio" class="custom-control-input" value="3">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">3 - Às vezes</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioSaude" type="radio" class="custom-control-input" value="4">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">4 - Frequentemente</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioSaude" type="radio" class="custom-control-input" value="5">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">5 - Quase sempre</span>
@@ -227,27 +227,27 @@
           <!-- INICIO QUESTÃO CONTROLE -->
           <div class="form-group mt-3">  
             <h5>6. Sente que tem perdido o controle da sua vida desde que a doença o seu familiar/ doente se manifestou?</h5>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block d-block">
               <input name="radioControle" type="radio" class="custom-control-input" value="1">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">1 - Nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block d-block">
               <input name="radioControle" type="radio" class="custom-control-input" value="2">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">2 - Quase nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block d-block">
               <input name="radioControle" type="radio" class="custom-control-input" value="3">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">3 - Às vezes</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block d-block">
               <input name="radioControle" type="radio" class="custom-control-input" value="4">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">4 - Frequentemente</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block d-block">
               <input name="radioControle" type="radio" class="custom-control-input" value="5">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">5 - Quase sempre</span>
@@ -257,43 +257,45 @@
           <!-- INICIO QUESTÃO SOBRECARREGADO -->
           <div class="form-group mt-3">  
             <h5>7. No geral, sente-se muito sobrecarregado por ter que cuidar do seu familiar/ doente?</h5>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioSobrecarregado" type="radio" class="custom-control-input" value="1">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">1 - Nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioSobrecarregado" type="radio" class="custom-control-input" value="2">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">2 - Quase nunca</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioSobrecarregado" type="radio" class="custom-control-input" value="3">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">3 - Às vezes</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioSobrecarregado" type="radio" class="custom-control-input" value="4">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">4 - Frequentemente</span>
             </label>
-            <label class="custom-control custom-radio">
+            <label class="custom-control custom-radio d-block">
               <input name="radioSobrecarregado" type="radio" class="custom-control-input" value="5">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description lead">5 - Quase sempre</span>
             </label>
           </div><!-- FIM QUESTÃO SOBRECARREGADO -->
 
-          <div class="row">
-            <div class="col-6 form-group">
-              <input type="submit" class="btn btn-success" value="Calcular">
-              <input type="reset" class="btn btn-danger" value="Limpar">  
+          <div class="row mt-3">
+            <div class="col-sm-12 col-md-6 form-group">
+              <input type="submit" class="btn btn-primary btn-block" value="Enviar">
+            </div>
+            <div class="col-sm-12 col-md-6 form-group">
+              <input type="reset" class="btn btn-danger btn-block" value="Limpar">  
             </div>
           </div>
         </form>
       </div>
     </div>
-
+    <hr>
   </div>
 </section>  
 

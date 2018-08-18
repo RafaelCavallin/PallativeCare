@@ -102,6 +102,7 @@
               <span class="custom-control-description lead">10</span>
             </label>
           </div><!-- INICIO DO RADIO DOR -->
+          <hr>
 
           <!-- INICIO DO SELECT CANSAÇO -->
           <div class="sm-form form-group mb-2">
@@ -182,6 +183,8 @@
             </label>
           </div> <!-- FIM DO RADIO CANSAÇO -->
           
+          <hr>
+
           <!-- INICIO DO SELECT SONOLÊNCIA -->
           <div class="sm-form form-group mb-2">
             <label class="mb-0">Sonolência</label>
@@ -737,7 +740,7 @@
 
           <!-- INICIO DO SELECT OUTROS -->
           <div class="sm-form form-group mb-2">
-            <label class="mb-0">Outros</label> <input class="col-5 form-control mb-1" type="text">
+            <label class="mb-0">Outros</label> <input class="col-12 form-control mb-1" name="nameOther" type="text">
             <select class="form-control" name="SelectOutros">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
@@ -756,7 +759,7 @@
           
           <!-- INICIO DO RADIO OUTROS -->
           <div class="md-form form-group">
-            <h4>Outros</h4> <input class="form-control col-5" name="nameOther" type="text"> 
+            <h4>Outros</h4> <input class="form-control col-6" name="nameOther" type="text"> 
             <label class="custom-control custom-radio">
               <input name="radioOutros" value="0" type="radio" class="custom-control-input">
               <span class="custom-control-indicator"></span>
@@ -814,12 +817,14 @@
             </label>
           </div><!-- FIM DO RADIO OUTROS -->
           
-          <div class="form-group">
-            <div class="btn-group" role="group">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-              <button type="reset" class="btn btn-secondary">Limpar</button>
+          <div class="row my-3">
+            <div class="col-sm-12 col-md-6 form-group">
+              <input type="submit" class="btn btn-primary btn-block" value="Enviar">
             </div>
-          </div>
+            <div class="col-sm-12 col-md-6 form-group">
+              <input type="reset" class="btn btn-danger btn-block" value="Limpar">  
+            </div>
+          </div> 
 
         </form>
       </div>

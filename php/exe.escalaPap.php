@@ -190,12 +190,14 @@
             </label>
           </div>
 
-          <div class="form-group mt-2">
-            <div class="btn-group" role="group">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-              <button type="reset" class="btn btn-secondary">Limpar</button>
+          <div class="row my-3">
+            <div class="col-sm-12 col-md-6 form-group">
+              <input type="submit" class="btn btn-primary btn-block" value="Enviar">
             </div>
-          </div>
+            <div class="col-sm-12 col-md-6 form-group">
+              <input type="reset" class="btn btn-danger btn-block" value="Limpar">  
+            </div>
+          </div> 
 
         </form>
       </div>

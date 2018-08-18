@@ -39,7 +39,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center mt-3">
-                <h1 class="display-4">Apresentação da ferramenta</h1>
+                <h2 class="display-4">Apresentação da ferramenta</h2>
                 <p class="lead">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quidem, fugit sit expedita quasi itaque asperiores cupiditate unde veritatis quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, autem!
                 </p>
@@ -50,10 +50,10 @@
                 <img src="img/img_pg_inicial.jpg" alt="" class="img-fluid mb-3 rounded-circle"> 
             </div>
             <div class="col-sm-12 col-md-6 text-center">
-                <h1 class="display-4 mb-4">Ferramentas</h1>
+                <h2 class="display-4 mb-4">Ferramentas</h2>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Escala de Karnofsky</li>
-                  <li class="list-group-item"><a href="escalaPps.html">Escala PPS</a></li>
+                  <li class="list-group-item">Escala PPS</li>
                   <li class="list-group-item">Escala Zarit</li>
                   <li class="list-group-item">Escala Esas-r</li>
                   <li class="list-group-item">Como comunicar más notícias</li>
@@ -62,4 +62,4 @@
           </div>
       </div>
   </div>
-        </section><!-- SECTION APRESENTAÇÃO -->
+</section><!-- SECTION APRESENTAÇÃO -->
