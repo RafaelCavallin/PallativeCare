@@ -1,0 +1,14 @@
+{
+    "name": "Palliative Care",
+    "description": "Projeto TCC II - Rafael Cavallin Oliveira",
+    "authors": [
+        {
+            "name": "Rafael Cavallin",
+            "email": "rafael_cavallin@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "phpmailer/phpmailer": "^6.0"
+    }
+}
