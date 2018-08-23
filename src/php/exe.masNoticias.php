@@ -9,7 +9,7 @@
     </div>
 
     <div class="row my-2">
-      <div class="col-12">
+      <div class="col-12 shadow">
         <h5 class="display-4">SPIKES</h5>
         <p class="text-justify">Ser empático e saber ouvir são as chaves para uma boa comunicação com pacientes e seus
           familiares. Perceber o quanto eles estão entendendo da situação e explorar as preocupações

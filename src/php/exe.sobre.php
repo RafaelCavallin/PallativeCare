@@ -15,7 +15,7 @@
 
     <div class="row">
       <div class="col-sm-12 col-md-6 d-none d-md-block">
-        <img src="img/c.png" alt="" class="img-fluid mb-3 rounded-circle"> 
+        <img src="src/img/c.png" alt="" class="img-fluid mb-3 rounded-circle"> 
       </div>
       <div class="col-sm-12 col-md-6">
         <h1 class="display-4 mb-4 text-center">Ferramentas</h1>

@@ -374,10 +374,10 @@
                     </div><!-- QUESTÃO PRAZER TV -->
                     <div class="row mt-3">
                         <div class="col-sm-12 col-md-6 form-group">
-                          <input type="submit" class="btn btn-primary btn-block" value="Enviar">
+                          <input type="submit" class="btn btn-lg btn-primary btn-block" value="Enviar">
                         </div>
                         <div class="col-sm-12 col-md-6 form-group">
-                          <input type="reset" class="btn btn-danger btn-block" value="Limpar">  
+                          <input type="reset" class="btn btn-lg btn-danger btn-block" value="Limpar">  
                         </div>
                     </div> 
                 </form>

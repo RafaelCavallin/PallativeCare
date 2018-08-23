@@ -10,7 +10,7 @@
   <div class="container">
     <div class="row justify-content-center">
 
-      <div class="col-sm-12 col-md-6 my-1">
+      <div class="col-sm-12 col-md-6 my-1 border-right">
         <p>Se você ...</p>
         <ul>
           <li class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias est, vitae dolor asperiores sapiente inventore, eaque perferendis facilis et dolore amet adipisci cumque ab consequatur vero. Libero, inventore! Natus, odio.</li>
