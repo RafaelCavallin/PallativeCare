@@ -47,7 +47,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-6">
-                <img src="img/img_pg_inicial.jpg" alt="" class="img-fluid mb-3 rounded-circle"> 
+                <img src="src/img/img_pg_inicial.jpg" alt="" class="img-fluid mb-3 rounded-circle"> 
             </div>
             <div class="col-sm-12 col-md-6 text-center">
                 <h2 class="display-4 mb-4">Ferramentas</h2>

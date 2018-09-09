@@ -27,7 +27,7 @@
           <!-- INICIO DO SELECT DOR -->
           <div class="sm-form form-group mb-2">
             <label class="mb-0">Dor</label>
-            <select class="form-control" name="SelectDor">
+            <select class="form-control" name="radioDor">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -46,68 +46,56 @@
           <!-- INICIO DO RADIO DOR -->
           <div class="md-form form-group">
             <h4>Dor</h4>
-            <label class="custom-control custom-radio">
-              <input name="radioDor" value="0" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">0</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDor" value="1" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">1</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDor" value="2" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">2</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDor" value="3" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">3</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDor" value="4" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">4</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDor" value="5" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">5</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDor" value="6" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">6</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDor" value="7" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">7</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDor" value="8" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">8</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDor" value="9" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">9</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDor" value="10" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">10</span>
-            </label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDor0" name="radioDor" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioDor0">0</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDor1" name="radioDor" class="custom-control-input" value="1">
+              <label class="custom-control-label lead" for="radioDor1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDor2" name="radioDor" class="custom-control-input" value="2">
+              <label class="custom-control-label lead" for="radioDor2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDor3" name="radioDor" class="custom-control-input" value="3">
+              <label class="custom-control-label lead" for="radioDor3">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDor4" name="radioDor" class="custom-control-input" value="4">
+              <label class="custom-control-label lead" for="radioDor4">4</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDor5" name="radioDor" class="custom-control-input" value="5">
+              <label class="custom-control-label lead" for="radioDor5">5</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDor6" name="radioDor" class="custom-control-input" value="6">
+              <label class="custom-control-label lead" for="radioDor6">6</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDor7" name="radioDor" class="custom-control-input" value="7">
+              <label class="custom-control-label lead" for="radioDor7">7</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDor8" name="radioDor" class="custom-control-input" value="8">
+              <label class="custom-control-label lead" for="radioDor8">8</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDor9" name="radioDor" class="custom-control-input" value="9">
+              <label class="custom-control-label lead" for="radioDor9">9</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDor10" name="radioDor" class="custom-control-input" value="10">
+              <label class="custom-control-label lead" for="radioDor10">10</label>
+            </div>
           </div><!-- INICIO DO RADIO DOR -->
-          <hr>
 
           <!-- INICIO DO SELECT CANSAÇO -->
           <div class="sm-form form-group mb-2">
             <label class="mb-0">Cansaço</label>
-            <select class="form-control" name="SelectCansaco">
+            <select class="form-control" name="radioCansaco">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -126,69 +114,56 @@
           <!-- INICIO DO RADIO CANSAÇO -->
           <div class="md-form form-group">
             <h4>Cansaço</h4>
-            <label class="custom-control custom-radio">
-              <input name="radioCansaco" value="0" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">0</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioCansaco" value="1" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">1</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioCansaco" value="2" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">2</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioCansaco" value="3" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">3</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioCansaco" value="4" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">4</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioCansaco" value="5" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">5</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioCansaco" value="6" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">6</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioCansaco" value="7" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">7</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioCansaco" value="8" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">8</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioCansaco" value="9" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">9</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioCansaco" value="10" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">10</span>
-            </label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioCansaco0" name="radioCansaco" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioCansaco0">0</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioCansaco1" name="radioCansaco" class="custom-control-input" value="1">
+              <label class="custom-control-label lead" for="radioCansaco1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioCansaco2" name="radioCansaco" class="custom-control-input" value="2">
+              <label class="custom-control-label lead" for="radioCansaco2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioCansaco3" name="radioCansaco" class="custom-control-input" value="3">
+              <label class="custom-control-label lead" for="radioCansaco3">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioCansaco4" name="radioCansaco" class="custom-control-input" value="4">
+              <label class="custom-control-label lead" for="radioCansaco4">4</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioCansaco5" name="radioCansaco" class="custom-control-input" value="5">
+              <label class="custom-control-label lead" for="radioCansaco5">5</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioCansaco6" name="radioCansaco" class="custom-control-input" value="6">
+              <label class="custom-control-label lead" for="radioCansaco6">6</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioCansaco7" name="radioCansaco" class="custom-control-input" value="7">
+              <label class="custom-control-label lead" for="radioCansaco7">7</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioCansaco8" name="radioCansaco" class="custom-control-input" value="8">
+              <label class="custom-control-label lead" for="radioCansaco8">8</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioCansaco9" name="radioCansaco" class="custom-control-input" value="9">
+              <label class="custom-control-label lead" for="radioCansaco9">9</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioCansaco10" name="radioCansaco" class="custom-control-input" value="10">
+              <label class="custom-control-label lead" for="radioCansaco10">10</label>
+            </div>
           </div> <!-- FIM DO RADIO CANSAÇO -->
-          
-          <hr>
 
           <!-- INICIO DO SELECT SONOLÊNCIA -->
           <div class="sm-form form-group mb-2">
             <label class="mb-0">Sonolência</label>
-            <select class="form-control" name="SelectSonolencia">
+            <select class="form-control" name="radioSono">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -207,67 +182,56 @@
           <!-- INICIO DO RADIO SOLOLÊNCIA -->
           <div class="md-form form-group">
             <h4>Sonolência</h4>
-            <label class="custom-control custom-radio">
-              <input name="radioSono" value="0" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">0</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioSono" value="1" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">1</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioSono" value="2" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">2</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioSono" value="3" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">3</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioSono" value="4" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">4</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioSono" value="5" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">5</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioSono" value="6" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">6</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioSono" value="7" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">7</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioSono" value="8" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">8</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioSono" value="9" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">9</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioSono" value="10" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">10</span>
-            </label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioSono0" name="radioSono" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioSono0">0</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioSono1" name="radioSono" class="custom-control-input" value="1">
+              <label class="custom-control-label lead" for="radioSono1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioSono2" name="radioSono" class="custom-control-input" value="2">
+              <label class="custom-control-label lead" for="radioSono2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioSono3" name="radioSono" class="custom-control-input" value="3">
+              <label class="custom-control-label lead" for="radioSono3">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioSono4" name="radioSono" class="custom-control-input" value="4">
+              <label class="custom-control-label lead" for="radioSono4">4</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioSono5" name="radioSono" class="custom-control-input" value="5">
+              <label class="custom-control-label lead" for="radioSono5">5</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioSono6" name="radioSono" class="custom-control-input" value="6">
+              <label class="custom-control-label lead" for="radioSono6">6</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioSono7" name="radioSono" class="custom-control-input" value="7">
+              <label class="custom-control-label lead" for="radioSono7">7</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioSono8" name="radioSono" class="custom-control-input" value="8">
+              <label class="custom-control-label lead" for="radioSono8">8</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioSono9" name="radioSono" class="custom-control-input" value="9">
+              <label class="custom-control-label lead" for="radioSono9">9</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioSono10" name="radioSono" class="custom-control-input" value="10">
+              <label class="custom-control-label lead" for="radioSono10">10</label>
+            </div>
           </div><!-- FIM DO RADIO SOLOLÊNCIA -->
 
           <!-- INICIO DO SELECT NÁUSEA -->
           <div class="sm-form form-group mb-2">
             <label class="mb-0">Náusea</label>
-            <select class="form-control" name="SelectNausea">
+            <select class="form-control" name="radioNausea">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -286,67 +250,56 @@
           <!-- INICIO DO RADIO NÁUSEA -->
           <div class="md-form form-group">
             <h4>Náusea</h4>
-            <label class="custom-control custom-radio">
-              <input name="radioNausea" value="0" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">0</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioNausea" value="1" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">1</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioNausea" value="2" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">2</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioNausea" value="3" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">3</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioNausea" value="4" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">4</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioNausea" value="5" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">5</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioNausea" value="6" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">6</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioNausea" value="7" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">7</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioNausea" value="8" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">8</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioNausea" value="9" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">9</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioNausea" value="10" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">10</span>
-            </label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioNausea0" name="radioNausea" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioNausea0">0</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioNausea1" name="radioNausea" class="custom-control-input" value="1">
+              <label class="custom-control-label lead" for="radioNausea1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioNausea2" name="radioNausea" class="custom-control-input" value="2">
+              <label class="custom-control-label lead" for="radioNausea2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioNausea3" name="radioNausea" class="custom-control-input" value="3">
+              <label class="custom-control-label lead" for="radioNausea3">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioNausea4" name="radioNausea" class="custom-control-input" value="4">
+              <label class="custom-control-label lead" for="radioNausea4">4</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioNausea5" name="radioNausea" class="custom-control-input" value="5">
+              <label class="custom-control-label lead" for="radioNausea5">5</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioNausea6" name="radioNausea" class="custom-control-input" value="6">
+              <label class="custom-control-label lead" for="radioNausea6">6</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioNausea7" name="radioNausea" class="custom-control-input" value="7">
+              <label class="custom-control-label lead" for="radioNausea7">7</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioNausea8" name="radioNausea" class="custom-control-input" value="8">
+              <label class="custom-control-label lead" for="radioNausea8">8</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioNausea9" name="radioNausea" class="custom-control-input" value="9">
+              <label class="custom-control-label lead" for="radioNausea9">9</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioNausea10" name="radioNausea" class="custom-control-input" value="10">
+              <label class="custom-control-label lead" for="radioNausea10">10</label>
+            </div>
           </div><!-- FIM DO RADIO NÁUSEA -->
 
           <!-- INICIO DO SELECT APETITE -->
           <div class="sm-form form-group mb-2">
             <label class="mb-0">Apetite</label>
-            <select class="form-control" name="SelectApetite">
+            <select class="form-control" name="radioApetite">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -365,67 +318,56 @@
           <!-- INICIO DO RADIO APETITE -->
           <div class="md-form form-group">
             <h4>Falta de Apetite</h4>
-            <label class="custom-control custom-radio">
-              <input name="radioApetite" value="0" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">0</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioApetite" value="1" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">1</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioApetite" value="2" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">2</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioApetite" value="3" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">3</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioApetite" value="4" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">4</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioApetite" value="5" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">5</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioApetite" value="6" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">6</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioApetite" value="7" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">7</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioApetite" value="8" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">8</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioApetite" value="9" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">9</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioApetite" value="10" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">10</span>
-            </label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioApetite0" name="radioApetite" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioApetite0">0</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioApetite1" name="radioApetite" class="custom-control-input" value="1">
+              <label class="custom-control-label lead" for="radioApetite1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioApetite2" name="radioApetite" class="custom-control-input" value="2">
+              <label class="custom-control-label lead" for="radioApetite2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioApetite3" name="radioApetite" class="custom-control-input" value="3">
+              <label class="custom-control-label lead" for="radioApetite3">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioApetite4" name="radioApetite" class="custom-control-input" value="4">
+              <label class="custom-control-label lead" for="radioApetite4">4</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioApetite5" name="radioApetite" class="custom-control-input" value="5">
+              <label class="custom-control-label lead" for="radioApetite5">5</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioApetite6" name="radioApetite" class="custom-control-input" value="6">
+              <label class="custom-control-label lead" for="radioApetite6">6</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioApetite7" name="radioApetite" class="custom-control-input" value="7">
+              <label class="custom-control-label lead" for="radioApetite7">7</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioApetite8" name="radioApetite" class="custom-control-input" value="8">
+              <label class="custom-control-label lead" for="radioApetite8">8</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioApetite9" name="radioApetite" class="custom-control-input" value="9">
+              <label class="custom-control-label lead" for="radioApetite9">9</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioApetite10" name="radioApetite" class="custom-control-input" value="10">
+              <label class="custom-control-label lead" for="radioApetite10">10</label>
+            </div>
           </div><!-- FIM DO RADIO APETITE -->
 
           <!-- INICIO DO SELECT TRISTEZA -->
           <div class="sm-form form-group mb-2">
             <label class="mb-0">Tristeza</label>
-            <select class="form-control" name="SelectTristeza">
+            <select class="form-control" name="radioTristeza">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -444,67 +386,56 @@
           <!-- INICIO DO RADIO TRISTEZA -->
           <div class="md-form form-group">
             <h4>Tristeza</h4>
-            <label class="custom-control custom-radio">
-              <input name="radioTristeza" value="0" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">0</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioTristeza" value="1" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">1</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioTristeza" value="2" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">2</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioTristeza" value="3" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">3</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioTristeza" value="4" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">4</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioTristeza" value="5" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">5</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioTristeza" value="6" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">6</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioTristeza" value="7" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">7</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioTristeza" value="8" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">8</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioTristeza" value="9" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">9</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioTristeza" value="10" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">10</span>
-            </label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioTristeza0" name="radioTristeza" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioTristeza0">0</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioTristeza1" name="radioTristeza" class="custom-control-input" value="1">
+              <label class="custom-control-label lead" for="radioTristeza1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioTristeza2" name="radioTristeza" class="custom-control-input" value="2">
+              <label class="custom-control-label lead" for="radioTristeza2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioTristeza3" name="radioTristeza" class="custom-control-input" value="3">
+              <label class="custom-control-label lead" for="radioTristeza3">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioTristeza4" name="radioTristeza" class="custom-control-input" value="4">
+              <label class="custom-control-label lead" for="radioTristeza4">4</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioTristeza5" name="radioTristeza" class="custom-control-input" value="5">
+              <label class="custom-control-label lead" for="radioTristeza5">5</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioTristeza6" name="radioTristeza" class="custom-control-input" value="6">
+              <label class="custom-control-label lead" for="radioTristeza6">6</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioTristeza7" name="radioTristeza" class="custom-control-input" value="7">
+              <label class="custom-control-label lead" for="radioTristeza7">7</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioTristeza8" name="radioTristeza" class="custom-control-input" value="8">
+              <label class="custom-control-label lead" for="radioTristeza8">8</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioTristeza9" name="radioTristeza" class="custom-control-input" value="9">
+              <label class="custom-control-label lead" for="radioTristeza9">9</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioTristeza10" name="radioTristeza" class="custom-control-input" value="10">
+              <label class="custom-control-label lead" for="radioTristeza10">10</label>
+            </div>
           </div><!-- FIM DO RADIO TRISTEZA -->
 
           <!-- INICIO DO SELECT ANSIEDADE -->
           <div class="sm-form form-group mb-2">
             <label class="mb-0">Ansiedade</label>
-            <select class="form-control" name="SelectAnsiedade">
+            <select class="form-control" name="radioAnsiedade">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -523,67 +454,56 @@
           <!-- INICIO RADIO ANSIEDADE -->
           <div class="md-form form-group">
             <h4>Ansiedade</h4>
-            <label class="custom-control custom-radio">
-              <input name="radioAnsiedade" value="0" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">0</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioAnsiedade" value="1" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">1</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioAnsiedade" value="2" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">2</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioAnsiedade" value="3" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">3</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioAnsiedade" value="4" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">4</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioAnsiedade" value="5" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">5</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioAnsiedade" value="6" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">6</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioAnsiedade" value="7" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">7</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioAnsiedade" value="8" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">8</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioAnsiedade" value="9" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">9</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioAnsiedade" value="10" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">10</span>
-            </label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioAnsiedade0" name="radioAnsiedade" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioAnsiedade0">0</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioAnsiedade1" name="radioAnsiedade" class="custom-control-input" value="1">
+              <label class="custom-control-label lead" for="radioAnsiedade1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioAnsiedade2" name="radioAnsiedade" class="custom-control-input" value="2">
+              <label class="custom-control-label lead" for="radioAnsiedade2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioAnsiedade3" name="radioAnsiedade" class="custom-control-input" value="3">
+              <label class="custom-control-label lead" for="radioAnsiedade3">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioAnsiedade4" name="radioAnsiedade" class="custom-control-input" value="4">
+              <label class="custom-control-label lead" for="radioAnsiedade4">4</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioAnsiedade5" name="radioAnsiedade" class="custom-control-input" value="5">
+              <label class="custom-control-label lead" for="radioAnsiedade5">5</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioAnsiedade6" name="radioAnsiedade" class="custom-control-input" value="6">
+              <label class="custom-control-label lead" for="radioAnsiedade6">6</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioAnsiedade7" name="radioAnsiedade" class="custom-control-input" value="7">
+              <label class="custom-control-label lead" for="radioAnsiedade7">7</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioAnsiedade8" name="radioAnsiedade" class="custom-control-input" value="8">
+              <label class="custom-control-label lead" for="radioAnsiedade8">8</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioAnsiedade9" name="radioAnsiedade" class="custom-control-input" value="9">
+              <label class="custom-control-label lead" for="radioAnsiedade9">9</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioAnsiedade10" name="radioAnsiedade" class="custom-control-input" value="10">
+              <label class="custom-control-label lead" for="radioAnsiedade10">10</label>
+            </div>
           </div><!-- INICIO RADIO ANSIEDADE -->
 
           <!-- INICIO DO SELECT MAL-ESTAR -->
           <div class="sm-form form-group mb-2">
             <label class="mb-0">Mal-Estar</label>
-            <select class="form-control" name="SelectMalEstar">
+            <select class="form-control" name="radioMalEstar">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -602,67 +522,56 @@
           <!-- INICIO DO RADIO MAL-ESTAR -->
           <div class="md-form form-group">
             <h4>Mal-Estar</h4>
-            <label class="custom-control custom-radio">
-              <input name="radioMalEstar" value="0" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">0</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioMalEstar" value="1" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">1</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioMalEstar" value="2" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">2</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioMalEstar" value="3" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">3</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioMalEstar" value="4" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">4</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioMalEstar" value="5" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">5</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioMalEstar" value="6" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">6</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioMalEstar" value="7" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">7</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioMalEstar" value="8" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">8</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioMalEstar" value="9" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">9</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioMalEstar" value="10" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">10</span>
-            </label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioMalEstar0" name="radioMalEstar" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioMalEstar0">0</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioMalEstar1" name="radioMalEstar" class="custom-control-input" value="1">
+              <label class="custom-control-label lead" for="radioMalEstar1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioMalEstar2" name="radioMalEstar" class="custom-control-input" value="2">
+              <label class="custom-control-label lead" for="radioMalEstar2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioMalEstar3" name="radioMalEstar" class="custom-control-input" value="3">
+              <label class="custom-control-label lead" for="radioMalEstar3">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioMalEstar4" name="radioMalEstar" class="custom-control-input" value="4">
+              <label class="custom-control-label lead" for="radioMalEstar4">4</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioMalEstar5" name="radioMalEstar" class="custom-control-input" value="5">
+              <label class="custom-control-label lead" for="radioMalEstar5">5</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioMalEstar6" name="radioMalEstar" class="custom-control-input" value="6">
+              <label class="custom-control-label lead" for="radioMalEstar6">6</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioMalEstar7" name="radioMalEstar" class="custom-control-input" value="7">
+              <label class="custom-control-label lead" for="radioMalEstar7">7</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioMalEstar8" name="radioMalEstar" class="custom-control-input" value="8">
+              <label class="custom-control-label lead" for="radioMalEstar8">8</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioMalEstar9" name="radioMalEstar" class="custom-control-input" value="9">
+              <label class="custom-control-label lead" for="radioMalEstar9">9</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioMalEstar10" name="radioMalEstar" class="custom-control-input" value="10">
+              <label class="custom-control-label lead" for="radioMalEstar10">10</label>
+            </div>
           </div><!-- FIM DO RADIO MAL-ESTAR -->
 
           <!-- INICIO DO SELECT DISPNÉIA -->
           <div class="sm-form form-group mb-2">
             <label class="mb-0">Dispnéia</label>
-            <select class="form-control" name="SelectDispneia">
+            <select class="form-control" name="radioDispneia">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -681,67 +590,56 @@
           <!-- INICIO DO RADIO DISPNÉIA -->
           <div class="md-form form-group">
             <h4>Dispnéia</h4>
-            <label class="custom-control custom-radio">
-              <input name="radioDispneia" value="0" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">0</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDispneia" value="1" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">1</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDispneia" value="2" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">2</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDispneia" value="3" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">3</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDispneia" value="4" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">4</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDispneia" value="5" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">5</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDispneia" value="6" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">6</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDispneia" value="7" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">7</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDispneia" value="8" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">8</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDispneia" value="9" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">9</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioDispneia" value="10" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">10</span>
-            </label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDispneia0" name="radioDispneia" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioDispneia0">0</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDispneia1" name="radioDispneia" class="custom-control-input" value="1">
+              <label class="custom-control-label lead" for="radioDispneia1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDispneia2" name="radioDispneia" class="custom-control-input" value="2">
+              <label class="custom-control-label lead" for="radioDispneia2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDispneia3" name="radioDispneia" class="custom-control-input" value="3">
+              <label class="custom-control-label lead" for="radioDispneia3">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDispneia4" name="radioDispneia" class="custom-control-input" value="4">
+              <label class="custom-control-label lead" for="radioDispneia4">4</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDispneia5" name="radioDispneia" class="custom-control-input" value="5">
+              <label class="custom-control-label lead" for="radioDispneia5">5</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDispneia6" name="radioDispneia" class="custom-control-input" value="6">
+              <label class="custom-control-label lead" for="radioDispneia6">6</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDispneia7" name="radioDispneia" class="custom-control-input" value="7">
+              <label class="custom-control-label lead" for="radioDispneia7">7</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDispneia8" name="radioDispneia" class="custom-control-input" value="8">
+              <label class="custom-control-label lead" for="radioDispneia8">8</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDispneia9" name="radioDispneia" class="custom-control-input" value="9">
+              <label class="custom-control-label lead" for="radioDispneia9">9</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioDispneia10" name="radioDispneia" class="custom-control-input" value="10">
+              <label class="custom-control-label lead" for="radioDispneia10">10</label>
+            </div>
           </div><!-- FIM DO RADIO DISPNÉIA -->
 
           <!-- INICIO DO SELECT OUTROS -->
           <div class="sm-form form-group mb-2">
             <label class="mb-0">Outros</label> <input class="col-12 form-control mb-1" name="nameOther" type="text">
-            <select class="form-control" name="SelectOutros">
+            <select class="form-control" name="radioOutros">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
               <option value="1">1</option>
@@ -760,61 +658,50 @@
           <!-- INICIO DO RADIO OUTROS -->
           <div class="md-form form-group">
             <h4>Outros</h4> <input class="form-control col-6" name="nameOther" type="text"> 
-            <label class="custom-control custom-radio">
-              <input name="radioOutros" value="0" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">0</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioOutros" value="1" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">1</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioOutros" value="2" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">2</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioOutros" value="3" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">3</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioOutros" value="4" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">4</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioOutros" value="5" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">5</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioOutros" value="6" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">6</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioOutros" value="7" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">7</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioOutros" value="8" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">8</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioOutros" value="9" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">9</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input name="radioOutros" value="10" type="radio" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description lead">10</span>
-            </label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioOutros0" name="radioOutros" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioOutros0">0</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioOutros1" name="radioOutros" class="custom-control-input" value="1">
+              <label class="custom-control-label lead" for="radioOutros1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioOutros2" name="radioOutros" class="custom-control-input" value="2">
+              <label class="custom-control-label lead" for="radioOutros2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioOutros3" name="radioOutros" class="custom-control-input" value="3">
+              <label class="custom-control-label lead" for="radioOutros3">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioOutros4" name="radioOutros" class="custom-control-input" value="4">
+              <label class="custom-control-label lead" for="radioOutros4">4</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioOutros5" name="radioOutros" class="custom-control-input" value="5">
+              <label class="custom-control-label lead" for="radioOutros5">5</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioOutros6" name="radioOutros" class="custom-control-input" value="6">
+              <label class="custom-control-label lead" for="radioOutros6">6</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioOutros7" name="radioOutros" class="custom-control-input" value="7">
+              <label class="custom-control-label lead" for="radioCOutros">7</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioOutros8" name="radioOutros" class="custom-control-input" value="8">
+              <label class="custom-control-label lead" for="radioOutros8">8</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioOutros9" name="radioOutros" class="custom-control-input" value="9">
+              <label class="custom-control-label lead" for="radioOutros9">9</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radioOutros10" name="radioOutros" class="custom-control-input" value="10">
+              <label class="custom-control-label lead" for="radioOutros10">10</label>
+            </div>
           </div><!-- FIM DO RADIO OUTROS -->
           
           <div class="row my-3">

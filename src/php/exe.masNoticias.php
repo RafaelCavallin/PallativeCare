@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row mt-md-4">
       <div class="col-sm-12 col-md-6 my-2">
         <div id="accordion">
           <div class="card rounded-0">
@@ -168,6 +168,7 @@
       </div>
 
       <div class="col-sm-12 col-md-6">
+      <div class="border-left">
         <h3 class="lead text-center py-1"><em><strong>Durante todo o momento da comunicação vale algumas dicas:</strong></em></h3>
 
         <ul class="text-justify">
@@ -179,6 +180,7 @@
           <li>Espere a tristeza e o choro, eles são praticamente certos nestas ocasiões. Não se desespere com o choro das pessoas, simplesmente acolha.</li>
           <li>Valorize a linguagem não verbal, aprenda a decifrá-la e confie na sua intuição. Além disso, saiba que as pessoas também leem o que você fala com seu corpo e essa linguagem tem mais força do que o que é falado.</li>
         </ul>
+      </div>  
       </div>
     </div>
 

@@ -1,7 +1,9 @@
-<?php
-class Pessoa
+<?php 
+
+class Usuario
 {
-    private $data;
+	
+	private $data;
 
     public function __construct()
     {
@@ -19,6 +21,13 @@ class Pessoa
     }
 
     public function __toString(){
+        //  JSON_UNESCAPED_UNICODE
+        // JSON_UNESCAPED_SLASHES
         return json_encode($this->data, JSON_UNESCAPED_UNICODE);
+    }
+
+    public function setInstanceDb(\PDO $instanceDb)
+    {
+        self::$instanceDb = $instanceDb;
     }
 }

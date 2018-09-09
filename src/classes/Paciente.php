@@ -30,10 +30,34 @@ class Paciente
         self::$instanceDb = $instanceDb;
     }
 
-    public function lisById(int $id)
+    public function listById(int $id)
     {
         $gateway = new PacienteGateway;
-        return $gateway->listById($id, ‘Paciente’);
+        return $gateway->listById($id, 'Paciente');
+    }
+
+    public static function retrieveById(int $id)
+    {
+        $gateway = new ClientesGateway;
+        return $gateway->retrieveById($id, ‘Cliente’);
+    }
+   
+    public static function retrieveAll(string $filter = ”)
+    {
+        $gateway = new ClientesGateway;
+        return $gateway->retrieveAll($filter, ‘Cliente’);
+    }
+
+    public function delete()
+    {
+        $gateway = new ClientesGateway;
+        return $gateway->delete($this->id);
+    }
+
+    public function persist()
+    {
+        $gateway = new ClientesGateway;
+        return $gateway->persist((object) $this->data);
     }
     
 }
