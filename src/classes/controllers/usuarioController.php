@@ -1,5 +1,4 @@
 <?php 
-include_once ("../Conexao.php");
 include_once ("../DbAdmin.php");
 
 $acao = $_GET['acao'];
@@ -15,7 +14,7 @@ switch ($acao) {
 			}else{
 				$data['nome'] = $_POST['nome'];
 				$data['email'] =  $_POST['email'];
-				$data['senha'] =  $_POST['senha'];
+				$data['senha'] =  md5($_POST['senha']);
 
 				$sql = "INSERT INTO usuario (nome_usuario, email, senha) VALUES (?, ?, ?)";
 

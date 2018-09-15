@@ -90,3 +90,16 @@
   </div>
 </div>
 
+
+<script>
+  function validaSenha(){
+    var senha = document.formCadastro.idSenha.value;
+    var confSenha = document.formCadastro.idConfSenha.value;
+
+    if(senha == confSenha){
+      alert('Senhas iguais');
+    }else{
+      alert('Senhas diferentes');
+    }
+  }
+</script>
