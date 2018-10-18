@@ -2,7 +2,8 @@
 include_once ('classes/DbAdmin.php');
 
 
-$sql = "SELECT * FROM usuario";
+$sql = "SELECT * FROM paciente";
 
 $result = select($sql);
 print_r ($result);
+

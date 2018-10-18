@@ -18,12 +18,14 @@
             $pag = 'home';
         }
         include_once('src/php/exe.' . $pag .'.php');
+        include_once('src/php/exe.footer.php');
     ?>
     
-    <?php include_once('src/php/exe.footer.php'); ?>
+  
 
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/popper.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/jquery.mask.js"></script>
 </body>
 </html>

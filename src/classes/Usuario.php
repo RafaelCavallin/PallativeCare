@@ -2,32 +2,113 @@
 
 class Usuario
 {
-	
-	private $data;
+	private $id;
+    private $nome;
+    private $email;
+    private $senha;
+    private $dataNasc;
+    private $profissao;
+    private $telefone;
+    private $dataCad;
 
     public function __construct()
     {
         
     }
 
-    public function __get($prop)
+    public function getId()
     {
-        return $this->data[$prop];
+        return $this->id;
     }
 
-    public function __set($prop, $value)
+    public function setId($id)
     {
-        $this->data[$prop] = $value;
+        $this->id = $id;
+
+        return $this;
     }
 
-    public function __toString(){
-        //  JSON_UNESCAPED_UNICODE
-        // JSON_UNESCAPED_SLASHES
-        return json_encode($this->data, JSON_UNESCAPED_UNICODE);
+    public function getNome()
+    {
+        return $this->nome;
     }
 
-    public function setInstanceDb(\PDO $instanceDb)
+    public function setNome($nome)
     {
-        self::$instanceDb = $instanceDb;
+        $this->nome = $nome;
+
+        return $this;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    public function getSenha()
+    {
+        return $this->senha;
+    }
+
+    public function setSenha($senha)
+    {
+        $this->senha = $senha;
+
+        return $this;
+    }
+
+    public function getDataNasc()
+    {
+        return $this->dataNasc;
+    }
+
+    public function setDataNasc($dataNasc)
+    {
+        $this->dataNasc = $dataNasc;
+
+        return $this;
+    }
+
+    public function getProfissao()
+    {
+        return $this->profissao;
+    }
+
+    public function setProfissao($profissao)
+    {
+        $this->profissao = $profissao;
+
+        return $this;
+    }
+
+    public function getTelefone()
+    {
+        return $this->telefone;
+    }
+
+    public function setTelefone($telefone)
+    {
+        $this->telefone = $telefone;
+
+        return $this;
+    }
+
+    public function getDataCad()
+    {
+        return $this->dataCad;
+    }
+
+    public function setDataCad($dataCad)
+    {
+        $this->dataCad = $dataCad;
+
+        return $this;
     }
 }

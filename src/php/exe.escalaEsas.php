@@ -26,7 +26,7 @@
 
           <!-- INICIO DO SELECT DOR -->
           <div class="sm-form form-group mb-2">
-            <label class="mb-0">Dor</label>
+            <label class="mb-0 font-weight-bold">Dor</label>
             <select class="form-control" name="radioDor">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
@@ -94,7 +94,7 @@
 
           <!-- INICIO DO SELECT CANSAÇO -->
           <div class="sm-form form-group mb-2">
-            <label class="mb-0">Cansaço</label>
+            <label class="mb-0 font-weight-bold">Cansaço</label>
             <select class="form-control" name="radioCansaco">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
@@ -162,7 +162,7 @@
 
           <!-- INICIO DO SELECT SONOLÊNCIA -->
           <div class="sm-form form-group mb-2">
-            <label class="mb-0">Sonolência</label>
+            <label class="mb-0 font-weight-bold">Sonolência</label>
             <select class="form-control" name="radioSono">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
@@ -230,7 +230,7 @@
 
           <!-- INICIO DO SELECT NÁUSEA -->
           <div class="sm-form form-group mb-2">
-            <label class="mb-0">Náusea</label>
+            <label class="mb-0 font-weight-bold">Náusea</label>
             <select class="form-control" name="radioNausea">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
@@ -298,7 +298,7 @@
 
           <!-- INICIO DO SELECT APETITE -->
           <div class="sm-form form-group mb-2">
-            <label class="mb-0">Apetite</label>
+            <label class="mb-0 font-weight-bold">Apetite</label>
             <select class="form-control" name="radioApetite">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
@@ -366,7 +366,7 @@
 
           <!-- INICIO DO SELECT TRISTEZA -->
           <div class="sm-form form-group mb-2">
-            <label class="mb-0">Tristeza</label>
+            <label class="mb-0 font-weight-bold">Tristeza</label>
             <select class="form-control" name="radioTristeza">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
@@ -434,7 +434,7 @@
 
           <!-- INICIO DO SELECT ANSIEDADE -->
           <div class="sm-form form-group mb-2">
-            <label class="mb-0">Ansiedade</label>
+            <label class="mb-0 font-weight-bold">Ansiedade</label>
             <select class="form-control" name="radioAnsiedade">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
@@ -502,7 +502,7 @@
 
           <!-- INICIO DO SELECT MAL-ESTAR -->
           <div class="sm-form form-group mb-2">
-            <label class="mb-0">Mal-Estar</label>
+            <label class="mb-0 font-weight-bold">Mal-Estar</label>
             <select class="form-control" name="radioMalEstar">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
@@ -570,7 +570,7 @@
 
           <!-- INICIO DO SELECT DISPNÉIA -->
           <div class="sm-form form-group mb-2">
-            <label class="mb-0">Dispnéia</label>
+            <label class="mb-0 font-weight-bold">Dispnéia</label>
             <select class="form-control" name="radioDispneia">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
@@ -638,7 +638,7 @@
 
           <!-- INICIO DO SELECT OUTROS -->
           <div class="sm-form form-group mb-2">
-            <label class="mb-0">Outros</label> <input class="col-12 form-control mb-1" name="nameOther" type="text">
+            <label class="mb-0 font-weight-bold">Outros</label> <input class="col-12 form-control mb-1" name="nameOther" type="text">
             <select class="form-control" name="radioOutros">
               <option value="-1">Selecione</option>
               <option value="0">0</option>
@@ -709,7 +709,7 @@
               <input type="submit" class="btn btn-primary btn-block" value="Enviar">
             </div>
             <div class="col-sm-12 col-md-6 form-group">
-              <input type="reset" class="btn btn-danger btn-block" value="Limpar">  
+              <input type="reset" class="btn btn-secondary btn-block" value="Limpar">  
             </div>
           </div> 
 

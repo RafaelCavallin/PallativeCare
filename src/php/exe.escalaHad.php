@@ -1,4 +1,4 @@
-<section id="escalaHad">
+<section id="escalaHad"
 
     <div class="container mt-4">
 
@@ -24,362 +24,181 @@
             <div class="col-md-12">
                 <form action="./teste2.php" method="POST">
                     <!-- QUESTÃO TENSO COTRAÍDO -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>A 1) Eu me sinto tenso ou contraído:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioTensoContraido" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">A maior parte do tempo</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioTensoContraido" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Boa parte do tempo</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioTensoContraido" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">De vez em quando</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioTensoContraido" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Nunca</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectTensoContraido">
+                          <option value="-1" selected>Selecione</option>
+                          <option value="3">A maior parte do tempo</option>
+                          <option value="2">Boa parte do tempo</option>
+                          <option value="1">De vez em quando</option>
+                          <option value="0">Nunca</option>
+                        </select>
                     </div><!-- QUESTÃO TENSO COTRAÍDO -->
 
                     <!-- QUESTÃO GOSTO COISAS -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>D 2) Eu ainda sinto gosto pelas mesmas coisas de antes:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioGostoCoisas" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Sim, do mesmo jeito que antes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioGostoCoisas" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Não tanto quanto antes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioGostoCoisas" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Só um pouco</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioGostoCoisas" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Já não sinto mais prazer em nada</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectGosto">
+                          <option value="-1" selected>Selecione</option>
+                          <option value="0">Sim, do mesmo jeito que antes</option>
+                          <option value="1">Não tanto quanto antes</option>
+                          <option value="2">Só um pouco</option>
+                          <option value="3">Já não sinto mais prazer em nada</option>
+                        </select>
                     </div><!-- QUESTÃO GOSTO COISAS -->
 
                     <!-- QUESTÃO SENTIMENTO RUIM -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>A 3) Eu sinto uma espécie de medo, como se alguma coisa ruim fosse acontecer:</h5>
-                        <label class="custom-control custom-radio">
-                            <input name="radioSentimentoRuim" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator d-block"></span>
-                            <span class="custom-control-description lead">Sim, e de um jeito muito forte</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioSentimentoRuim" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator d-block"></span>
-                            <span class="custom-control-description lead">Sim, mas não tão forte</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioSentimentoRuim" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Um pouco, mas isso não me preocupa</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioSentimentoRuim" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Não sinto nada disso</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectMedo">
+                          <option value="-1" selected>Selecione</option>
+                          <option value="3">Sim, e de um jeito muito forte</option>
+                          <option value="2">Sim, mas não tão forte</option>
+                          <option value="1">Um pouco, mas isso não me preocupa</option>
+                          <option value="0">Não sinto nada disso</option>
+                        </select>
                     </div><!-- QUESTÃO SENTIMENTO RUIM -->
 
                     <!-- QUESTÃO RISADA E DIVERSÃO -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>D 4) Dou risada e me divirto quando vejo coisas engraçadas:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioRisadaDiversao" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Do mesmo jeito que antes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioRisadaDiversao" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Atualmente um pouco menos</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioRisadaDiversao" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Atualmente bem menos</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioRisadaDiversao" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Não consigo mais</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectRisada">
+                          <option value="-1" selected>Selecione</option>
+                          <option value="0">Do mesmo jeito que antes</option>
+                          <option value="1">Atualmente um pouco menos</option>
+                          <option value="2">Atualmente bem menos</option>
+                          <option value="3">Não consigo mais</option>
+                        </select>
                     </div><!-- QUESTÃO RISADA E DIVERSÃO -->
 
                     <!-- QUESTÃO CABEÇA CHEIA -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>A 5) Estou com a cabeça cheia de preocupações:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioCabecaCheia" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">A maior parte do tempo</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioCabecaCheia" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Boa parte do tempo</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioCabecaCheia" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">De vez em quando</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioCabecaCheia" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Raramente</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectPreocupacao">
+                          <option value="-1" selected>Selecione</option>
+                          <option value="3">A maior parte do tempo</option>
+                          <option value="2">Boa parte do tempo</option>
+                          <option value="1">De vez em quando</option>
+                          <option value="0">Raramente</option>
+                        </select>
                     </div><!-- QUESTÃO CABEÇA CHEIA -->
 
                     <!-- QUESTÃO SENTIMENTO ALEGRE -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>D 6) Eu me sinto alegre:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioSentimentoAlegre" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Nunca</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioSentimentoAlegre" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Poucas vezes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioSentimentoAlegre" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Muitas vezes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioSentimentoAlegre" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">A maior parte do tempo</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectAlegre">
+                          <option value="-1" selected>Selecione</option>
+                          <option value="3">Nunca</option>
+                          <option value="2">Poucas vezes</option>
+                          <option value="1">Muitas vezes</option>
+                          <option value="0">A maior parte do tempo</option>
+                        </select>
                     </div><!-- QUESTÃO SENTIMENTO ALEGRE -->
 
                     <!-- QUESTÃO À VONTADE RELAXADO -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>A 7) Consigo ficar sentado à vontade e me sentir relaxado:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioVontadeRelaxado" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Sim, quase sempre</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioVontadeRelaxado" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Muitas vezes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioVontadeRelaxado" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Poucas vezes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioVontadeRelaxado" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Nunca</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectRelaxado">
+                          <option value="-1" selected>Selecione</option>
+                          <option value="0">Sim, quase sempre</option>
+                          <option value="1">Muitas vezes</option>
+                          <option value="2">Poucas vezes</option>
+                          <option value="3">Nunca</option>
+                        </select>
                     </div><!-- QUESTÃO À VONTADE RELAXADO -->
 
                     <!-- QUESTÃO LENTO PENSAR E FAZER -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>D 8) Eu estou lento para pensar e fazer as coisas:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioPensarFazer" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Quase sempre</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioPensarFazer" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Muitas vezes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioPensarFazer" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">De vez em quando</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioPensarFazer" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Nunca</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectLento">
+                          <option value="-1" selected>Selecione</option>
+                          <option value="3">Quase sempre</option>
+                          <option value="2">Muitas vezes</option>
+                          <option value="1">De vez em quando</option>
+                          <option value="0">Nunca</option>
+                        </select>
                     </div><!-- QUESTÃO LENTO PENSAR E FAZER -->
 
                     <!-- QUESTÃO FRIO BARRIGA -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>A 9) Eu tenho uma sensação ruim de medo, como um frio na barriga ou um aperto no estômago:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioFrioBarriga" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Nunca</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioFrioBarriga" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">De vez em quando</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioFrioBarriga" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Muitas vezes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioFrioBarriga" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Quase sempre</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectFrioNaBarriga">
+                          <option value="-1">Selecione</option>
+                          <option value="0">Nunca</option>
+                          <option value="1">De vez em quando</option>
+                          <option value="2">Muitas vezes</option>
+                          <option value="3">Quase sempre</option>
+                        </select>
                     </div><!-- QUESTÃO FRIO BARRIGA -->
 
                     <!-- QUESTÃO CUIDAR APARÊNCIA -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>D 10) Eu perdi o interesse em cuidar da minha aparência:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioCuidarAparencia" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Completamente</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioCuidarAparencia" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Não estou mais me cuidando como deveria</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioCuidarAparencia" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Talvez não tanto quanto antes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioCuidarAparencia" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Me cuido do mesmo jeito que antese</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectAparencia">
+                          <option value="-1">Selecione</option>
+                          <option value="3">Completamente</option>
+                          <option value="2">Não estou mais me cuidando como deveria</option>
+                          <option value="1">Talvez não tanto quanto antes</option>
+                          <option value="0">Me cuido do mesmo jeito que antes</option>
+                        </select>
                     </div><!-- QUESTÃO CUIDAR APARÊNCIA -->
 
                     <!-- QUESTÃO INQUIETO -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>A 11) Eu me sinto inquieto, como se eu não pudesse ficar parado em lugar nenhum:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioInquieto" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Sim, demais</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioInquieto" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Bastante</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioInquieto" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Um pouco</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioInquieto" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Não me sinto assimsmo jeito que antese</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectInquieto">
+                          <option value="-1">Selecione</option>
+                          <option value="3">Sim, demais</option>
+                          <option value="2">Bastante</option>
+                          <option value="1">Um pouco</option>
+                          <option value="0">Não me sinto assimsmo jeito que antes</option>
+                        </select>
                     </div><!-- QUESTÃO INQUIETO -->
 
                     <!-- QUESTÃO ANIMADO -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>D 12) Fico esperando animado as coisas boas que estão por vir:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioAnimado" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Do mesmo jeito que antes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioAnimado" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Um pouco menos do que antes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioAnimado" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Bem menos do que antes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioAnimado" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Quase nunca</span>
-                        </label>
-                    </div><!-- QUESTÃO ANIMADO -->
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectAnimado">
+                          <option value="-1">Selecione</option>
+                          <option value="0">Do mesmo jeito que antes</option>
+                          <option value="1">Um pouco menos do que antes</option>
+                          <option value="2">Bem menos do que antes</option>
+                          <option value="3">Quase nunca</option>
+                        </select>
+                     </div><!-- QUESTÃO ANIMADO -->
 
                     <!-- QUESTÃO PÂNICO -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>A 13) De repente, tenho a sensação de entrar em pânico:</h5>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioPanico" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">A quase todo momento</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioPanico" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Várias vezes</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioPanico" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">De vez em quando</span>
-                        </label>
-                        <label class="custom-control custom-radio d-block">
-                            <input name="radioPanico" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Não sinto isso</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectPanico">
+                          <option value="-1" selected>Selecione</option>
+                          <option value="3">A quase todo momento</option>
+                          <option value="2">Várias vezes</option>
+                          <option value="1">De vez em quando</option>
+                          <option value="0">Não sinto isso</option>
+                        </select>
                     </div><!-- QUESTÃO PÂNICO -->
 
                     <!-- QUESTÃO PRAZER TV -->
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                         <h5>D 14) Consigo sentir prazer quando assisto a um bom programa de televisão, de rádio ou quando leio alguma coisa:</h5>
-                        <label class="custom-control custom-radio  d-block">
-                            <input name="radioPrazerTv" type="radio" class="custom-control-input" value="0">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Quase sempre</span>
-                        </label>
-                        <label class="custom-control custom-radio  d-block">
-                            <input name="radioPrazerTv" type="radio" class="custom-control-input" value="1">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Várias vezes</span>
-                        </label>
-                        <label class="custom-control custom-radio  d-block">
-                            <input name="radioPrazerTv" type="radio" class="custom-control-input" value="2">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Poucas vezes</span>
-                        </label>
-                        <label class="custom-control custom-radio  d-block">
-                            <input name="radioPrazerTv" type="radio" class="custom-control-input" value="3">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description lead">Quase nunca</span>
-                        </label>
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="selectTv">
+                          <option value="-1" selected>Selecione</option>
+                          <option value="0">Quase sempre</option>
+                          <option value="1">Várias vezes</option>
+                          <option value="2">Poucas vezes</option>
+                          <option value="3">Quase nunca</option>
+                        </select>
                     </div><!-- QUESTÃO PRAZER TV -->
+
                     <div class="row mt-3">
-                        <div class="col-sm-12 col-md-6 form-group">
+                        <div class="col-sm-12 col-md-6 form-group mb-2">
                           <input type="submit" class="btn btn-lg btn-primary btn-block" value="Enviar">
                         </div>
                         <div class="col-sm-12 col-md-6 form-group">
-                          <input type="reset" class="btn btn-lg btn-danger btn-block" value="Limpar">  
+                          <input type="reset" class="btn btn-lg btn-secondary btn-block" value="Limpar">  
                         </div>
-                    </div> 
+                    </div>
                 </form>
             </div><!-- ESCALA -->
         </div>

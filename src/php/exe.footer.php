@@ -1,4 +1,4 @@
-<footer class="bg-dark text-white">
+<footer class="footer bg-dark text-white">
 	<div class="container py-3">
 		<div class="row">
 			<div class="col-sm-6 text-center">
@@ -6,4 +6,4 @@
 			</div>
 		</div>
 	</div>
-</footer><!-- FOOTER -->
+</footer>

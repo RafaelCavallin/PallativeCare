@@ -2,62 +2,101 @@
 
 class Paciente
 {
-    private $data;
+    private $id;
+    private $nome;
+    private $prontuario;
+    private $dataNasc;
+    private $contato;
+    private $servico;
+    private $dataCad;
 
     public function __construct()
     {
         
     }
 
-    public function __get($prop)
+
+    public function getId()
     {
-        return $this->data[$prop];
+        return $this->id;
     }
 
-    public function __set($prop, $value)
+    public function setId($id)
     {
-        $this->data[$prop] = $value;
+        $this->id = $id;
+
+        return $this;
     }
 
-    public function __toString(){
-        //  JSON_UNESCAPED_UNICODE
-        // JSON_UNESCAPED_SLASHES
-        return json_encode($this->data, JSON_UNESCAPED_UNICODE);
+    public function getNome()
+    {
+        return $this->nome;
     }
 
-    public function setInstanceDb(\PDO $instanceDb)
+    public function setNome($nome)
     {
-        self::$instanceDb = $instanceDb;
+        $this->nome = $nome;
+
+        return $this;
     }
 
-    public function listById(int $id)
+    public function getProntuario()
     {
-        $gateway = new PacienteGateway;
-        return $gateway->listById($id, 'Paciente');
+        return $this->prontuario;
     }
 
-    public static function retrieveById(int $id)
+    public function setProntuario($prontuario)
     {
-        $gateway = new ClientesGateway;
-        return $gateway->retrieveById($id, ‘Cliente’);
-    }
-   
-    public static function retrieveAll(string $filter = ”)
-    {
-        $gateway = new ClientesGateway;
-        return $gateway->retrieveAll($filter, ‘Cliente’);
+        $this->prontuario = $prontuario;
+
+        return $this;
     }
 
-    public function delete()
+    public function getDataNasc()
     {
-        $gateway = new ClientesGateway;
-        return $gateway->delete($this->id);
+        return $this->dataNasc;
     }
 
-    public function persist()
+    public function setDataNasc($dataNasc)
     {
-        $gateway = new ClientesGateway;
-        return $gateway->persist((object) $this->data);
+        $this->dataNasc = $dataNasc;
+
+        return $this;
     }
-    
+
+    public function getContato()
+    {
+        return $this->contato;
+    }
+
+    public function setContato($contato)
+    {
+        $this->contato = $contato;
+
+        return $this;
+    }
+
+    public function getServico()
+    {
+        return $this->servico;
+    }
+
+    public function setServico($servico)
+    {
+        $this->servico = $servico;
+
+        return $this;
+    }
+
+    public function getDataCad()
+    {
+        return $this->dataCad;
+    }
+
+    public function setDataCad($dataCad)
+    {
+        $this->dataCad = $dataCad;
+
+        return $this;
+    }
 }

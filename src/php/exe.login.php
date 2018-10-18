@@ -1,7 +1,7 @@
 <section id="login">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-sm-12 col-md-8 col-lg-9">
+      <div class="col-sm-12 col-md-12 col-lg-9">
 
         <div class="card my-4">
           <div class="card-header">
@@ -40,16 +40,22 @@
                       <input type="text" name="nome" class="form-control" required>
                     </div>
                     <div class="form-group">
+                      <label>Profissão</label>
+                      <input type="text" name="profissao" class="form-control">
+                    </div>
+                    <div class="form-group">
                       <label>Email</label>
                       <input type="email" name="email" class="form-control" required>
                     </div>
-                    <div class="form-group">
-                      <label>Senha</label>
+                    <div class="form-row">
+                      <div class="col-sm-12 col-md-6 form-group">
+                        <label>Senha</label>
                       <input type="password" id="idSenha" name="senha" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                      <label>Confirmar senha</label>
+                      </div>
+                      <div class="col-sm-12 col-md-6 form-group">
+                        <label>Confirmar senha</label>
                       <input type="password" id="idConfSenha" name="confSenha" class="form-control" required>
+                      </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block mt-3">Enviar</button>
                 </form>

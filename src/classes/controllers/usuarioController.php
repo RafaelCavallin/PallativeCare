@@ -12,17 +12,24 @@ switch ($acao) {
 			if($_POST['senha'] != $_POST['confSenha']){
 				echo "As senhas precisam ser iguais";
 			}else{
-				$data['nome'] = $_POST['nome'];
-				$data['email'] =  $_POST['email'];
-				$data['senha'] =  md5($_POST['senha']);
+				//Verifica se o email já existe no banco.
+				$verEmail = array($_POST['email']);
+				$sql = "SELECT * FROM usuario";
+				$filter = " WHERE email = ?";
 
-				$sql = "INSERT INTO usuario (nome_usuario, email, senha) VALUES (?, ?, ?)";
+				if (count(select($sql, $filter, $verEmail))) {
+					echo "Já existe";
+				}else{
+					// Se o email não existir no banco realiza o cadastro.
+					$data = array($_POST['nome'],  $_POST['email'], md5($_POST['senha']));
+					$sql = "INSERT INTO usuario (nome_usuario, email, senha) VALUES (?, ?, ?)";
 
-				if (insert($sql, $data)) {
-					echo "Deu certo";
-				}else {
-					echo "Deu errado";
-				}
+					if (insert($sql, $data)) {
+						header('Location:../../admin/index.php');
+					}else {
+						echo "Deu errado";
+					}
+				}				
 			}
 		}
 		break;
