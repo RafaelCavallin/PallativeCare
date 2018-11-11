@@ -1,9 +1,7 @@
-<footer class="footer bg-dark text-white">
-	<div class="container py-3">
-		<div class="row">
-			<div class="col-sm-6 text-center">
-				teste
-			</div>
+<footer class="bg-dark text-white">
+	<div class="py-3 my-auto">
+		<div class="col-sm-6 text-center my-auto">
+			<span>Copyright © Palliative Care 2018</span>
 		</div>
 	</div>
 </footer>

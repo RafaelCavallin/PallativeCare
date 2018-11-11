@@ -17,22 +17,19 @@
                     <li>Pode ser utilizada para detectar mudanças emocionais durante o curso da enfermidade.</li>
                     <li>Sua validade para detectar enfermidade psiquiátrica definida é limitada.</li>
                 </ul>
-                <small class="text-muted">Fonte: <a href="http://biblioteca.cofen.gov.br/wp-content/uploads/2017/05/Manual-de-cuidados-paliativos-ANCP.pdf" target="blank">Manual de Cuidados Paliativos ANCP - 2ª edição</a></small>
             </div>
         </div><!-- /row -->
 
         <hr>
 
-        <div class="row justify-content-center">
+        <div class="row">
             <!-- ESCALA -->
-            <div class="col-md-6">
-              <div class="card bg-light">
-                <div class="card-body">
-                  <form action="teste.php" method="POST">
+            <div class="col-md-12">
+                <form action="teste.php" method="POST">
                     <!-- QUESTÃO TENSO COTRAÍDO -->
                     <div class="form-group mb-3">
                         <h5>A - Eu me sinto tenso ou contraído:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="AselectTensoContraido">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="AselectTensoContraido">
                           <option value="-1" selected>Selecione</option>
                           <option value="3">A maior parte do tempo</option>
                           <option value="2">Boa parte do tempo</option>
@@ -44,7 +41,7 @@
                     <!-- QUESTÃO GOSTO COISAS -->
                     <div class="form-group mb-3">
                         <h5>D - Eu ainda sinto gosto pelas mesmas coisas de antes:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="DselectGosto">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="DselectGosto">
                           <option value="-1" selected>Selecione</option>
                           <option value="0">Sim, do mesmo jeito que antes</option>
                           <option value="1">Não tanto quanto antes</option>
@@ -56,7 +53,7 @@
                     <!-- QUESTÃO SENTIMENTO RUIM -->
                     <div class="form-group mb-3">
                         <h5>A - Eu sinto uma espécie de medo, como se alguma coisa ruim fosse acontecer:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="AselectMedo">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="AselectMedo">
                           <option value="-1" selected>Selecione</option>
                           <option value="3">Sim, e de um jeito muito forte</option>
                           <option value="2">Sim, mas não tão forte</option>
@@ -68,7 +65,7 @@
                     <!-- QUESTÃO RISADA E DIVERSÃO -->
                     <div class="form-group mb-3">
                         <h5>D - Dou risada e me divirto quando vejo coisas engraçadas:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="DselectRisada">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="DselectRisada">
                           <option value="-1" selected>Selecione</option>
                           <option value="0">Do mesmo jeito que antes</option>
                           <option value="1">Atualmente um pouco menos</option>
@@ -80,7 +77,7 @@
                     <!-- QUESTÃO CABEÇA CHEIA -->
                     <div class="form-group mb-3">
                         <h5>A - Estou com a cabeça cheia de preocupações:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="AselectPreocupacao">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="AselectPreocupacao">
                           <option value="-1" selected>Selecione</option>
                           <option value="3">A maior parte do tempo</option>
                           <option value="2">Boa parte do tempo</option>
@@ -92,7 +89,7 @@
                     <!-- QUESTÃO SENTIMENTO ALEGRE -->
                     <div class="form-group mb-3">
                         <h5>D - Eu me sinto alegre:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="DselectAlegre">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="DselectAlegre">
                           <option value="-1" selected>Selecione</option>
                           <option value="3">Nunca</option>
                           <option value="2">Poucas vezes</option>
@@ -104,7 +101,7 @@
                     <!-- QUESTÃO À VONTADE RELAXADO -->
                     <div class="form-group mb-3">
                         <h5>A - Consigo ficar sentado à vontade e me sentir relaxado:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="AselectRelaxado">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="AselectRelaxado">
                           <option value="-1" selected>Selecione</option>
                           <option value="0">Sim, quase sempre</option>
                           <option value="1">Muitas vezes</option>
@@ -116,7 +113,7 @@
                     <!-- QUESTÃO LENTO PENSAR E FAZER -->
                     <div class="form-group mb-3">
                         <h5>D - Eu estou lento para pensar e fazer as coisas:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="DselectLento">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="DselectLento">
                           <option value="-1" selected>Selecione</option>
                           <option value="3">Quase sempre</option>
                           <option value="2">Muitas vezes</option>
@@ -128,7 +125,7 @@
                     <!-- QUESTÃO FRIO BARRIGA -->
                     <div class="form-group mb-3">
                         <h5>A - Eu tenho uma sensação ruim de medo, como um frio na barriga ou um aperto no estômago:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="AselectFrioNaBarriga">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="AselectFrioNaBarriga">
                           <option value="-1">Selecione</option>
                           <option value="0">Nunca</option>
                           <option value="1">De vez em quando</option>
@@ -140,7 +137,7 @@
                     <!-- QUESTÃO CUIDAR APARÊNCIA -->
                     <div class="form-group mb-3">
                         <h5>D - Eu perdi o interesse em cuidar da minha aparência:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="DselectAparencia">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="DselectAparencia">
                           <option value="-1">Selecione</option>
                           <option value="3">Completamente</option>
                           <option value="2">Não estou mais me cuidando como deveria</option>
@@ -152,7 +149,7 @@
                     <!-- QUESTÃO INQUIETO -->
                     <div class="form-group mb-3">
                         <h5>A - Eu me sinto inquieto, como se eu não pudesse ficar parado em lugar nenhum:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="AselectInquieto">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="AselectInquieto">
                           <option value="-1">Selecione</option>
                           <option value="3">Sim, demais</option>
                           <option value="2">Bastante</option>
@@ -164,7 +161,7 @@
                     <!-- QUESTÃO ANIMADO -->
                     <div class="form-group mb-3">
                         <h5>D - Fico esperando animado as coisas boas que estão por vir:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="DselectAnimado">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="DselectAnimado">
                           <option value="-1">Selecione</option>
                           <option value="0">Do mesmo jeito que antes</option>
                           <option value="1">Um pouco menos do que antes</option>
@@ -176,7 +173,7 @@
                     <!-- QUESTÃO PÂNICO -->
                     <div class="form-group mb-3">
                         <h5>A - De repente, tenho a sensação de entrar em pânico:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="AselectPanico">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="AselectPanico">
                           <option value="-1" selected>Selecione</option>
                           <option value="3">A quase todo momento</option>
                           <option value="2">Várias vezes</option>
@@ -188,7 +185,7 @@
                     <!-- QUESTÃO PRAZER TV -->
                     <div class="form-group mb-3">
                         <h5>D - Consigo sentir prazer quando assisto a um bom programa de televisão, de rádio ou quando leio alguma coisa:</h5>
-                        <select class="form-control col-md-12 col-sm-12" name="DselectTv">
+                        <select class="form-control col-lg-6 col-md-12 col-sm-12" name="DselectTv">
                           <option value="-1" selected>Selecione</option>
                           <option value="0">Quase sempre</option>
                           <option value="1">Várias vezes</option>
@@ -198,12 +195,101 @@
                     </div><!-- QUESTÃO PRAZER TV -->
 
                     <div class="form-group mt-3 ">
-                      <input type="submit" class="btn btn-primary col-md-12" value="Enviar">
+                      <input type="submit" class="btn btn-primary col-md-6" value="Enviar">
                     </div>
-                  </form>
-                </div><!-- /card-body -->
-              </div><!-- /card -->
+
+                </form>
             </div><!-- ESCALA -->
+        </div><!-- /row -->
+
+        <hr>
+
+        <div class="row mt-3">
+            <div class="col-md-12 mt-3"> 
+                <h5 class="mb-3"><em>Presença de ansiedade ou depressão, pontuação maior ou igual a 8.</em></h5>
+
+                <h4><em>Hipodermóclise</em></h4>
+                <ul>
+                    <li class="text-justify">Consiste na de administração fluidos através da via subcutânea.</li>
+
+                    <li class="text-justify">Tem grande aplicabilidade em pacientes internados em domicílio, pois permite o envolvimento mais seguro do cuidador capacitado em situações em que existe a necessidade de administrar medicamentos injetáveis em curtos intervalos de tempo.</li>
+
+                    <li class="text-justify">Via alternativa para pacientes com dificuldade de manter acesso venoso permanente e que necessitam receber drogas injetáveis.</li>
+
+                    <li class="text-justify">Garante a manutenção da hidratação em pacientes impedidos de receber hidratação oral, quando ainda não foi estabelecida uma via enteral mais segura.</li>
+
+                    <li class="text-justify">Possibilita uma via segura para pacientes com necessidade de analgesia intermitente, principalmente com drogas opioides.</li>
+
+                    <li class="text-justify">Garante a continuidade de tratamento em domicílio quando existe a necessidade de administrar antibióticos injetáveis.</li>
+
+                    <li class="text-justify"><em>Técnica:</em> utilizar cateter agulhado (escalpe 21G ou 25G) ou não agulhado (18G e 24G), após os cuidados de assepsia, introduzir a agulha na pele em ângulo de 30 a 45 graus em direção centrípeta, com o bisel voltado para cima.</li>
+
+                    <li class="text-justify"><em>Velocidade de Infusão:</em> a hidratação pode ser em bolus de 500ml em 20 minutos, repetindo até 3 vezes em 24h. Em infusão contínua, o volume diário não poderá ultrapassar 3000ml. Administração de volume em período noturno é mais confortável, garantindo mais autonomia dos pacientes durante o dia.</li>
+
+                    <li class="text-justify"><em>Zonas de punção:</em> regiões deltóidea, infraclavicular, abdominal, face lateral da coxa.</li>
+
+                    <li class="text-justify"><em>Drogas administráveis por via SC.</em></li>
+                </ul>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">Fármaco</th>
+                            <th scope="col">Indicações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Morfina</td>
+                            <td>Dor, dispneia</td>
+                        </tr>
+                        <tr>
+                            <td>Tramadol</td>
+                            <td>Dor</td>
+                        </tr>
+                        <tr>
+                            <td>Escopolamina</td>
+                            <td>Estertores premortem, sialorreia, secreções respiratórias, obstrução intestinal</td>
+                        </tr>
+                        <tr>
+                            <td>Morfina</td>
+                            <td>Dor, dispneia</td>
+                        </tr>
+                        <tr>
+                            <td>Midazolam</td>
+                            <td>Convulsões, sedação paliativa</td>
+                        </tr>
+                        <tr>
+                            <td>Metoclopamida</td>
+                            <td>Náuseas e vômitos</td>
+                        </tr>
+                        <tr>
+                            <td>Haloperidol</td>
+                            <td>Náuseas e vômitos por opioides, vômitos em obstrução intestinal, <em>delirium</em></td>
+                        </tr>
+                        <tr>
+                            <td>Dexametazona</td>
+                            <td>Múltiplas indicações em CP</td>
+                        </tr>
+                        <tr>
+                            <td>Octreotide</td>
+                            <td>Obstrução intestinal</td>
+                        </tr>
+                        <tr>
+                            <td>Ceftriaxone, cefepime, ampicilina</td>
+                            <td>Infecção</td>
+                        </tr>
+                        <tr>
+                            <td>Furosemida</td>
+                            <td>ICC, anasarca, IRA</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4><em>Conclusão</em></h4>
+                <p class="text-justify">Internação Domiciliar e Cuidados Paliativos, com enfoque interdisciplinar, obedecendo os conceitos validados de melhor qualidade de vida aos pacientes e seus familiares, caracterizam-se como uma excelente estrutura para prestar acolhimento integral em situações de terminalidade, oferecendo suporte humanizado,  com alívio facilitado dos sintomas físicos, emocionais, sociais e espirituais em ambiente domiciliar. Escalas de avaliação de sintomas em Cuidados Paliativos são perfeitamente aplicáveis em domicilio, facilitando a pronta resolução dos sintomas pela equipe interdisciplinar, sempre com apoio do cuidador principal.</p>
+            </div>
+            <small class="text-muted">Fonte: <a href="http://biblioteca.cofen.gov.br/wp-content/uploads/2017/05/Manual-de-cuidados-paliativos-ANCP.pdf" target="blank">Manual de Cuidados Paliativos ANCP - 2ª edição</a></small>
         </div><!-- /row -->
 
     </div><!-- /container -->

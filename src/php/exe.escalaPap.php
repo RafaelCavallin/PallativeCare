@@ -1,29 +1,15 @@
-<section id="escalaPap">
+<section id="escalaPap" class="mb-3">
   <div class="container mt-4">
 
     <div class="row">
       <div class="col-md-12 mb-4">
         <h4 class="display-4">O Palliative Prognostic Score</h4><h5> - PaP</h5>
       </div>
-    </div>
+    </div><!-- /row -->
 
     <div class="row">
-      <div class="col-md-6 mb-4">
-       <form action="./teste4.php" method="POST">
-
-          <div class="form-group">
-            <h5>Anorexia</h5>
-              <div class="custom-control custom-radio d-block">
-                <input name="radioAnorexia" type="radio" id="radioAnorexiaN" class="custom-control-input" value="0">
-                <label class="custom-control-label lead" for="radioAnorexiaN">Não</label>
-              </div>
-              <div class="custom-control custom-radio d-block">
-                <input name="radioAnorexia" type="radio" id="radioAnorexiaS" class="custom-control-input" value="1">
-                <label class="custom-control-label lead" for="radioAnorexiaS">Sim</label>
-              </div>
-          </div>
-
-            <hr>
+      <div class="col-md-6">
+       <form action="teste2.php" method="POST">
           
           <div class="form-group">
             <h5>Dispneia</h5>
@@ -35,10 +21,58 @@
               <input name="radioDispneia" type="radio" id="radioDispneiaS" class="custom-control-input" value="1">
               <label class="custom-control-label lead" for="radioDispneiaS">Sim</label>
             </div>
-          </div>
+          </div><!-- /Dispneia -->
 
-            <hr>
+          <hr>
             
+          <div class="form-group">
+            <h5>Anorexia</h5>
+              <div class="custom-control custom-radio d-block">
+                <input name="radioAnorexia" type="radio" id="radioAnorexiaN" class="custom-control-input" value="0">
+                <label class="custom-control-label lead" for="radioAnorexiaN">Não</label>
+              </div>
+              <div class="custom-control custom-radio d-block">
+                <input name="radioAnorexia" type="radio" id="radioAnorexiaS" class="custom-control-input" value="1.5">
+                <label class="custom-control-label lead" for="radioAnorexiaS">Sim</label>
+              </div>
+          </div><!-- /Anorexia -->
+
+          <hr>
+
+          <div class="form-group">
+            <h5>Estimativa clínica de sobrevivência (semanas)</h5>
+            <div class="custom-control custom-radio d-block">
+              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia12" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioSobrevivencia12">>12</label>
+            </div>
+            <div class="custom-control custom-radio d-block">
+              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia1" class="custom-control-input" value="2">
+              <label class="custom-control-label lead" for="radioSobrevivencia1">11 - 12</label>
+            </div>
+            <div class="custom-control custom-radio d-block">
+              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia2" class="custom-control-input" value="2.5">
+              <label class="custom-control-label lead" for="radioSobrevivencia2">9 - 10</label>
+            </div>
+            <div class="custom-control custom-radio d-block">
+              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia3" class="custom-control-input" value="2.5">
+              <label class="custom-control-label lead" for="radioSobrevivencia3">7 - 8</label>
+            </div>
+            <div class="custom-control custom-radio d-block">
+              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia4" class="custom-control-input" value="4.5">
+              <label class="custom-control-label lead" for="radioSobrevivencia4">5 - 6</label>
+            </div>
+            <div class="custom-control custom-radio d-block">
+              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia5" class="custom-control-input" value="5">
+              <label class="custom-control-label lead" for="radioSobrevivencia5">3 - 4</label>
+            </div>
+            <div class="custom-control custom-radio d-block">
+              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia6" class="custom-control-input" value="8.5">
+              <label class="custom-control-label lead" for="radioSobrevivencia6">1 - 2</label>
+            </div>
+          </div><!-- /estimativa clínica-->
+
+          <hr>
+
           <div class="form-group">
             <h5>Pontuação na escala de performance de Karnofsky (%)</h5>
             <div class="custom-control custom-radio d-block">
@@ -46,7 +80,7 @@
               <label class="custom-control-label lead" for="radioKpsM">≥30</label>
             </div>
             <div class="custom-control custom-radio d-block">
-              <input name="radioKps" type="radio" id="radioKps" class="custom-control-input" value="1">
+              <input name="radioKps" type="radio" id="radioKps" class="custom-control-input" value="2.5">
               <label class="custom-control-label lead" for="radioKps">10 - 20</label>
             </div>
             <small class="d-block" id="linkEscalaKps"><a href="#" onclick="Mudarestado('EscalaKps')">Escala KPS</a></small>
@@ -104,81 +138,48 @@
                 </tbody>
               </table>
             </div><!-- ESCALA KPS -->
-          </div>
+          </div><!-- /Karnofsky -->
 
-            <hr>
-
-          <div class="form-group">
-            <h5>Estimativa clínica de sobrevivência (semanas)</h5>
-            <div class="custom-control custom-radio d-block">
-              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia12" class="custom-control-input" value="0">
-              <label class="custom-control-label lead" for="radioSobrevivencia12">>12</label>
-            </div>
-            <div class="custom-control custom-radio d-block">
-              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia1" class="custom-control-input" value="2">
-              <label class="custom-control-label lead" for="radioSobrevivencia1">11 - 12</label>
-            </div>
-            <div class="custom-control custom-radio d-block">
-              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia2" class="custom-control-input" value="2.5">
-              <label class="custom-control-label lead" for="radioSobrevivencia2">7 - 10</label>
-            </div>
-            <div class="custom-control custom-radio d-block">
-              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia56" class="custom-control-input" value="4.5">
-              <label class="custom-control-label lead" for="radioSobrevivencia56">5 - 6</label>
-            </div>
-            <div class="custom-control custom-radio d-block">
-              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia34" class="custom-control-input" value="6">
-              <label class="custom-control-label lead" for="radioSobrevivencia34">3 - 4</label>
-            </div>
-            <div class="custom-control custom-radio d-block">
-              <input name="radioSobrevivencia" type="radio" id="radioSobrevivencia0" class="custom-control-input" value="8.5">
-              <label class="custom-control-label lead" for="radioSobrevivencia0">1 - 2</label>
-            </div>
-          </div>
-
-            <hr>
+          <hr>
           
           <div class="form-group">
-            <h5>Contagem leucocitária (x10-3/L) </h5>
+            <h5>Leucócitos totais por mm3</h5>
             <div class="custom-control custom-radio d-block">
               <input name="radioLeucocitaria" type="radio" id="radioLeucocitaria" class="custom-control-input" value="0">
-              <label class="custom-control-label lead" for="radioLeucocitaria">≤8,5</label>
+              <label class="custom-control-label lead" for="radioLeucocitaria"> <8.500 </label>
             </div>
             <div class="custom-control custom-radio d-block">
               <input name="radioLeucocitaria" type="radio" id="radioLeucocitaria1" class="custom-control-input" value="0.5">
-              <label class="custom-control-label lead" for="radioLeucocitaria1">8,6-11</label>
+              <label class="custom-control-label lead" for="radioLeucocitaria1"> 8.501-11.000 </label>
             </div>
             <div class="custom-control custom-radio d-block">
               <input name="radioLeucocitaria" type="radio" id="radioLeucocitaria2" class="custom-control-input" value="1.5">
-              <label class="custom-control-label lead" for="radioLeucocitaria2">>11</label>
+              <label class="custom-control-label lead" for="radioLeucocitaria2"> >11.000 </label>
             </div>
-          </div>
+          </div><!-- /leucocitária -->
 
-            <hr>
+          <hr>
           
           <div class="form-group">
-            <h5>Linfócitos (%)</h5>
+            <h5>Porcentagem de linfócitos</h5>
 
             <div class="custom-control custom-radio d-block">
-              <input name="radioLinfocitos" type="radio" id="radioLinfocitos" class="custom-control-input" value="0">
-              <label class="custom-control-label lead" for="radioLinfocitos">≤20</label>
+              <input name="radioLinfocitos" type="radio" id="radioLinfocitos" class="custom-control-input" value="2.5">
+              <label class="custom-control-label lead" for="radioLinfocitos"> <12 </label>
             </div>
             <div class="custom-control custom-radio d-block">
               <input name="radioLinfocitos" type="radio" id="radioLinfocitos1" class="custom-control-input" value="1">
-              <label class="custom-control-label lead" for="radioLinfocitos1">12-19,9</label>
+              <label class="custom-control-label lead" for="radioLinfocitos1"> 12-19,9 </label>
             </div>
             <div class="custom-control custom-radio d-block">
-              <input name="radioLinfocitos" type="radio" id="radioLinfocitos2" class="custom-control-input" value="2.5">
-              <label class="custom-control-label lead" for="radioLinfocitos2"><12</label>
+              <input name="radioLinfocitos" type="radio" id="radioLinfocitos2" class="custom-control-input" value="0">
+              <label class="custom-control-label lead" for="radioLinfocitos2">≥20 </label>
             </div>
-          </div>
+          </div><!-- /Linfócitos -->
 
           <div class="row my-3">
-            <div class="col-sm-12 col-md-6 form-group">
+            <div class="col-sm-12 col-md-12 form-group">
               <input type="submit" class="btn btn-primary btn-block" value="Enviar">
-            </div>
-            <div class="col-sm-12 col-md-6 form-group">
-              <input type="reset" class="btn btn-secondary btn-block" value="Limpar">  
             </div>
           </div> 
 
@@ -216,9 +217,10 @@
               </tr>
             </tbody>
           </table>
+          <small class="text-muted">Fonte: <a href="http://biblioteca.cofen.gov.br/wp-content/uploads/2017/05/Manual-de-cuidados-paliativos-ANCP.pdf" target="blank">Manual de Cuidados Paliativos ANCP - 2ª edição</a></small>
         </div>
       </div>
-    </div>
+    </div><!-- /row -->
 </section> 
 
 <script>

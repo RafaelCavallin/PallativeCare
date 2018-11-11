@@ -36,12 +36,8 @@ include_once ("Conexao.php");
             return $result->fetchAll(PDO::FETCH_ASSOC);
     }   
 
-    function delete($sql, $filter = "", $data = ""){
-
-    }
-
     // Recebe uma data e uma opção. A opção serve para informar como o retorno será feito, para o banco para mostrar ao usuário.
-    // 0 para formatar para inserir no baco e 1 para formatar para mostrar ao usuário. 
+    // 0 para formatar para inserir no banco e 1 para formatar para mostrar ao usuário. 
     function setData($data, $op){
         switch ($op) {
             case '0':

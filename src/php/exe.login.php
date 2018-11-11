@@ -5,66 +5,34 @@
 
         <div class="card my-4">
           <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
-              <li class="nav-item">
-                <a class="nav-link active" href="#logar" id="logar-tab" data-toggle="tab"  role="tab" aria-controls="logar" aria-selected="true">Acessar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#cadastrar" id="cadastrar-tab" data-toggle="tab"  role="tab" aria-controls="cadastrar" aria-selected="true">Cadastrar</a>
-              </li>
-            </ul>
+            Acessar
           </div>
           <div class="card-body">
-             <div class="tab-content" id="myTabContent">
+            <form name="formLogin" action="src/classes/controllers/loginController.php?acao=logar" method="POST">
 
-              <div class="tab-pane fade show active" id="logar" role="tabpanel" aria-labelledby="logar-tab">
-                  <form name="formLogin" action="src/classes/controllers/loginController.php?acao=logar" method="POST">
-                    <div class="form-group">
-                      <label>Email</label>
-                      <input type="email" name="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                      <label>Senha</label>
-                      <input type="password" name="senha" class="form-control" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block mt-3">Enviar</button>
-                    <small id="emailHelp" class="form-text text-muted text-right mt-2"><a href="#" data-toggle="modal" data-target="#recuperarSenhaModal">Recuperar senha</a></small>
-                  </form>
-              </div><!-- Tab logar -->
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label>Senha</label>
+                <input type="password" name="senha" class="form-control" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block mt-3">Enviar</button>
 
+              <div class="row justify-content-between">
+                <div class="col-6">
+                  <small class="form-text text-muted text-left mt-2"><a href="#" data-toggle="modal" data-target="#cadastroModal">Cadastre-se</a></small>
+                </div>
+                <div class="col-6">
+                  <small class="form-text text-muted text-right mt-2"><a href="#" data-toggle="modal" data-target="#recuperarSenhaModal">Recuperar senha</a></small>
+                </div>
+              </div><!-- /row justify-content-between -->
 
-              <div class="tab-pane fade" id="cadastrar" role="tabpanel" aria-labelledby="cadastrar-tab">
-                <form name="formCadastro" action="src/classes/controllers/usuarioController.php?acao=cadastrar" method="POST">
-                    <div class="form-group">
-                      <label>Nome</label>
-                      <input type="text" name="nome" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                      <label>Profissão</label>
-                      <input type="text" name="profissao" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Email</label>
-                      <input type="email" name="email" class="form-control" required>
-                    </div>
-                    <div class="form-row">
-                      <div class="col-sm-12 col-md-6 form-group">
-                        <label>Senha</label>
-                      <input type="password" id="idSenha" name="senha" class="form-control" required>
-                      </div>
-                      <div class="col-sm-12 col-md-6 form-group">
-                        <label>Confirmar senha</label>
-                      <input type="password" id="idConfSenha" name="confSenha" class="form-control" required>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block mt-3">Enviar</button>
-                </form>
-              </div> <!-- Tab cadastro -->
-
-            </div><!-- Tab content -->
+            </form>
           </div>
         </div>
-      
+
       </div>
     </div>
   </div>
@@ -96,16 +64,45 @@
   </div>
 </div>
 
-
-<script>
-  function validaSenha(){
-    var senha = document.formCadastro.idSenha.value;
-    var confSenha = document.formCadastro.idConfSenha.value;
-
-    if(senha == confSenha){
-      alert('Senhas iguais');
-    }else{
-      alert('Senhas diferentes');
-    }
-  }
-</script>
+<!-- Model de cadastro de novo usuário -->
+<div class=" modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-labelledby="cadastroModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="recuperarSenhaModal">Cadastro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form name="formCadastro" action="src/classes/controllers/usuarioController.php?acao=cadastrar" method="POST">
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="text" name="nome" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Profissão</label>
+            <input type="text" name="profissao" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-row">
+            <div class="col-sm-12 col-md-6 form-group">
+              <label>Senha</label>
+              <input type="password" id="idSenha" name="senha" class="form-control" required>
+            </div>
+            <div class="col-sm-12 col-md-6 form-group">
+              <label>Confirmar senha</label>
+              <input type="password" id="idConfSenha" name="confSenha" class="form-control" required>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>  
+</div>

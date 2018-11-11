@@ -31,6 +31,34 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Data', 'PPS_Carlos'],
+          ['01/09',  90],
+          ['08/09',  80],
+          ['15/09',  50],
+          ['22/09',  70],
+          ['29/09',  40]
+        ]);
+
+        var options = {
+          title: 'Escala PPS',
+          subtitle: '',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 
   </head>
 
@@ -46,9 +74,6 @@ session_start();
       <div id="content-wrapper">
 
         <div class="container-fluid">
-
-          <!-- Icon Cards-->
-          <?php include_once('php/exe.cards.php'); ?>
 
           <?php 
             // CARREGAMENTO DAS PÁGINAS

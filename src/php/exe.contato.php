@@ -10,7 +10,7 @@
   <div class="container">
     <div class="row justify-content-center">
 
-      <div class="col-sm-12 col-md-6 my-1 border-right">
+      <div class="col-sm-12 col-md-6 my-1">
         <p>Se você ...</p>
         <ul>
           <li class="text-justify">Tem alguma ideia que possa contribuir com o desenvolvimento do projeto.</li>
@@ -20,7 +20,7 @@
       </div>
 
       <div class="col-sm-12 col-md-6 my-1">
-        <form action="contato.php" method="POST">
+        <form action="src/classes/controllers/emailController.php" method="POST">
           <legend class="text-center">Formulário de Contato</legend>
           <div class="form-group">
             <label for="">Nome</label>

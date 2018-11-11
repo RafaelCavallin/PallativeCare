@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php include_once('src/php/exe.menu.php'); ?>
-    
+
     <?php 
         // CARREGAMENTO DAS PÁGINAS
         if (isset($_GET['pg']) and !empty($_GET['pg'])) {
@@ -18,11 +18,10 @@
             $pag = 'home';
         }
         include_once('src/php/exe.' . $pag .'.php');
-        include_once('src/php/exe.footer.php');
+        
     ?>
+    <?php include_once('src/php/exe.footer.php'); ?>
     
-  
-
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/popper.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>

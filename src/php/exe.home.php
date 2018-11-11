@@ -29,6 +29,7 @@
             </div>
             <div class="col-sm-12 col-md-6">
                 <p class="text-justify lead"><strong>Cuidados de fim de vida</strong> são normalmente definidos como o cuidado fornecido no último ano de vida do paciente (DoH, 2008). Entretanto, dado à fatores como a dificuldade para determinar alguns prognósticos e como as várias necessidades dos pacientes (físicas e psicológicas), os cuidados de fim de vida podem significar mais tempo para uns ou menos para outros. Considerar previamente que o paciente está se encaminhando para o fim de sua vida possibilita a eles e aos familiares pensarem sobre o que é importante para eles – o que eles iriam ou não gostar que acontecesse. Sempre se pergunte: “Eu ficaria surpreso se o paciente morrer nos próximos 6 meses?”. Se a resposta for não, então considere se é apropriado iniciar as discussões sobre o fim de vida, se os planos de conduta devem ser alterados, se outros profissionais devem ser atualizados ou se termos para proteger o paciente contra tratamentos fúteis devem ser preenchidos.</p>
+                <small class="text-muted">Fonte: Cuidados Paliativos - <a href="https://docs.wixstatic.com/ugd/f59eea_0d17e53c81144d069f00e16d53137731.pdf" target="blank">Guia de Bolso</a></small>
             </div>
         </div>
     </div>
@@ -41,7 +42,7 @@
             <div class="col-sm-12 text-center mt-3">
                 <h2 class="display-4">Apresentação da ferramenta</h2>
                 <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quidem, fugit sit expedita quasi itaque asperiores cupiditate unde veritatis quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, autem!
+                    Ferramenta desenvolvida para auxiliar profissionais da área da saúde nos cuidados paliativos. O objetivo é disponibilizar de forma online algumas das escalas utilizadas durante o atendimento a um paciente.
                 </p>
             </div>
         </div>
@@ -52,12 +53,13 @@
             <div class="col-sm-12 col-md-6 text-center">
                 <h2 class="display-4 mb-4">Ferramentas</h2>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Escala de Karnofsky</li>
-                  <li class="list-group-item">Escala PPS</li>
-                  <li class="list-group-item">Escala Zarit</li>
-                  <li class="list-group-item">Escala Esas-r</li>
-                  <li class="list-group-item">Como comunicar más notícias</li>
-                  <li class="list-group-item">Escala de Ansiedade e Depressão (HAD)</li>
+                  <li class="list-group-item"><a href="index.php?pg=escalaZarit">Zarit</a></li> 
+                  <li class="list-group-item"><a href="index.php?pg=escalaKps">Karnofsky</a></li>
+                  <li class="list-group-item"><a href="index.php?pg=masNoticias">Protocolo SPIKES</a></li> 
+                  <li class="list-group-item"><a href="index.php?pg=escalaPps">Pallative Performance Scale - PPS</a></li>
+                  <li class="list-group-item"><a href="index.php?pg=escalaHad">Escala de Ansiedade e Depressão - HAD</a></li>
+                  <li class="list-group-item"><a href="index.php?pg=escalaEsas">Edmonton Symptom Assessment System - Esas-r</a></li>
+                  <li class="list-group-item"><a href="index.php?pg=escalaPap">Palliative prognostic Score - PaP</a></li>
               </ul>
           </div>
       </div>

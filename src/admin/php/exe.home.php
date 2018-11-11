@@ -1,4 +1,11 @@
-<p class="lead">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, totam a! Consectetur deserunt veritatis laborum quo ut amet dolorem recusandae, similique sit quisquam, mollitia neque doloremque quibusdam tenetur voluptatum corporis!
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum iste aut, delectus saepe commodi laboriosam fugiat quos illo ex quia vitae magni dicta quisquam, labore natus illum molestias. Fugiat, repellendus?
-</p>
+<h1 class="display-4 mb-4">Página Inicial</h1>
+
+
+<div class="row">
+	<div class="col-sm-12 col-md-6">
+		Aqui
+	</div>
+	<div class="col-sm-12 col-md-6">
+		Aqui
+	</div>
+</div>

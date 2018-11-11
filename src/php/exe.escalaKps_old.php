@@ -21,6 +21,7 @@
             <tr>
               <th scope="col" class="text-center">%</th>
               <th scope="col" class="text-center">Significado</th>
+              <th scope="com" class="text-center"> </th>
             </tr>
           </thead>
           <tbody>
@@ -28,43 +29,53 @@
         
               <tr>
                 <th scope="row" class="text-center">100</th>
-                <td class="btn btn-secondary btn-block">Normal, ausência de queixas, sem evidências de doença</td>
+                <td>Normal, ausência de queixas, sem evidências de doença</td>
+                <td colspan="2"><input type="radio" name="kps"></td>
               </tr>
               <tr>
                 <th scope="row" class="text-center">90</th>
                 <td>Capaz de realizar atividades normais, sinais e sintomas mínimos da doença</td>
+                <td colspan="2"><input type="radio" name="kps"></td>
               </tr>
               <tr>
                 <th scope="row" class="text-center">80</th>
                 <td>Atividade normal com esforço, alguns sinais ou sintomas da doença Incapacidade para grande esforço físico, consegue deambular</td>
+                <td colspan="2"><input type="radio" name="kps"></td>
               </tr>
               <tr>
                 <th scope="row" class="text-center">70</th>
                 <td>Não requer assistência para cuidados pessoais, mas é incapaz de realizar atividades normais, como tarefas caseiras e trabalhos ativos</td>
+                <td colspan="2"><input type="radio" name="kps"></td>
               </tr>
               <tr>
                 <th scope="row" class="text-center">60</th>
                 <td>Requer assistência ocasional, mas consegue realizar a maioria dos seus cuidados pessoais</td>
+                <td colspan="2"><input type="radio" name="kps"></td>
               </tr>
               <tr>
                 <th scope="row" class="text-center">50</th>
                 <td>Requer considerável assistência e frequentes cuidados médicos</td>
+                <td colspan="2"><input type="radio" name="kps"></td>
               </tr>
               <tr>
                 <th scope="row" class="text-center">40</th>
                 <td>Incapacitado, requer cuidados pessoais e assistência, autocuidado limitado Permanece mais de 50% do horário vigil sentado ou deitado</td>
+                <td colspan="2"><input type="radio" name="kps"></td>
               </tr>
               <tr>
                 <th scope="row" class="text-center">30</th>
                 <td>Severamente incapacitado, necessidade de tratamento de suporte permanente, embora a morte não seja iminente</td>
+                <td colspan="2"><input type="radio" name="kps"></td>
               </tr>
               <tr>
                 <th scope="row" class="text-center">20</th>
                 <td>Paciente muito doente, completamente incapaz, necessidade de tratamento de suporte permanente, confinado ao leito</td>
+                <td colspan="2"><input type="radio" name="kps"></td>
               </tr>
               <tr>
                 <th scope="row" class="text-center">10</th>
                 <td>Moribundo, processo de morte progredindo rapidamente</td>
+                <td colspan="2"><input type="radio" name="kps"></td>
               </tr>
             </form>
           </tbody>

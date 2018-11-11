@@ -1,4 +1,4 @@
-<section id="masNoticias">
+<section id="masNoticias" class=" mb-3">
 
   <div class="container mt-4">
 
@@ -9,15 +9,15 @@
     </div>
 
     <div class="row my-2">
-      <div class="col-12 shadow">
+      <div class="col-12">
         <h5 class="display-4">SPIKES</h5>
-        <p class="text-justify">Ser empático e saber ouvir são as chaves para uma boa comunicação com pacientes e seus
+        <p class="text-justify lead">Ser empático e saber ouvir são as chaves para uma boa comunicação com pacientes e seus
           familiares. Perceber o quanto eles estão entendendo da situação e explorar as preocupações
           deles são os fatores que mais contribuem para o desenvolvimento de uma relação harmônica. A
           informação deve ser dada de maneira progressiva e com compaixão para que o espaço entre
           expectativa e realidade possa ser reduzido gradativamente.
         </p>
-        <p class="text-justify">Para ajudar na boa comunicação de más notícias o “protocolo SPIKES” foi desenvolvido. Não se trata de um protocolo rígido, mas é realmente uma ajuda para nortear a conversa e controlar as emoções.</p>
+        <p class="text-justify lead">Para ajudar na boa comunicação de más notícias o “protocolo SPIKES” foi desenvolvido. Não se trata de um protocolo rígido, mas é realmente uma ajuda para nortear a conversa e controlar as emoções.</p>
       </div>
     </div>
 
@@ -168,10 +168,9 @@
       </div>
 
       <div class="col-sm-12 col-md-6">
-      <div class="border-left">
         <h3 class="lead text-center py-1"><em><strong>Durante todo o momento da comunicação vale algumas dicas:</strong></em></h3>
 
-        <ul class="text-justify">
+        <ul class="text-justify lead">
           <li>Repita palavras usadas pelo paciente para ressaltar que você está atento e se importando com o que é dito. Por exemplo, “quando você diz que reconhece que está pior...”.</li>
           <li>Permita a negação a qualquer momento da conversa. Esse mecanismo de defesa auxilia o paciente a controlar a quantidade de informações que deseja receber. “Você gostaria de continuar conversando sobre esse assunto? ”. </li>
           <li>Se preocupe mais em compreender do que propriamente em responder perguntas. Para ajudar as pessoas recisamos conhecer no íntimo seu sofrimento. “O que mais está te incomodando?”, “Como o que nós acabamos de conversar deixou você agora?”, “Como você está se sentindo agora?”.</li>
@@ -180,7 +179,7 @@
           <li>Espere a tristeza e o choro, eles são praticamente certos nestas ocasiões. Não se desespere com o choro das pessoas, simplesmente acolha.</li>
           <li>Valorize a linguagem não verbal, aprenda a decifrá-la e confie na sua intuição. Além disso, saiba que as pessoas também leem o que você fala com seu corpo e essa linguagem tem mais força do que o que é falado.</li>
         </ul>
-      </div>  
+        <small class="text-muted">Fonte: Cuidados Paliativos - <a href="https://docs.wixstatic.com/ugd/f59eea_0d17e53c81144d069f00e16d53137731.pdf" target="blank">Guia de Bolso</a></small>
       </div>
     </div>
 
