@@ -27,7 +27,7 @@ $resultEscala = select($sql);
   <span class="display-4"><?php echo $nome ?></span>
 
 
-    <form action="#" method="get" class="mt-4">
+    <form action='#' method="POST" class="mt-4">
       <fieldset>
         <legend>Gráfico</legend>
       

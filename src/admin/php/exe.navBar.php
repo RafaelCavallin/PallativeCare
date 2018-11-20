@@ -12,8 +12,8 @@
             <i class="fas fa-user-circle fa-fw"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-            <a class="dropdown-item" href="index.php?pg=perfil">Perfil</a>
-            <div class="dropdown-divider"></div>
+           <!--  <a class="dropdown-item" href="index.php?pg=perfil">Perfil</a> -->
+            
             <a class="dropdown-item" href="../classes/controllers/loginController.php?acao=logout">Sair</a>
           </div>
         </li>
