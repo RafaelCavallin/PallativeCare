@@ -11,6 +11,10 @@ $result = select($sql, $filter, $data);
 $sqlEscala = "SELECT *  FROM escala";
 $resultEscala = select($sqlEscala);
 
+$sqlConsulta = "SELECT paciente.id_paciente, paciente.nome_paciente, consulta.data_consulta, consulta.id_consulta FROM consulta INNER JOIN paciente ON paciente.id_paciente = consulta.id_paciente";
+$filterConsulta = "  WHERE id_profissional = ?";
+$resulConsulta = select($sqlConsulta, $filterConsulta, $data);
+
 ?>
 <div class="container">
 	<div class="row mt-2 mb-4">
@@ -20,70 +24,72 @@ $resultEscala = select($sqlEscala);
 					<h2 class="lead">Consulta</h2>
 				</div>
 				<div class="card-body">
+
 					<form name="formConsulta" action="../classes/controllers/consultaController.php?acao=cadConsulta" method="POST">
-						<div class="form-group">
-							<label for="selectPaciente">Paciente</label>
-							<select name="nomePaciente" class="form-control" id="selectPaciente" required>
-								<option value="">Selecione</option>
-								<?php  
-								foreach ($result as $value) {
-									echo '<option value="' . $value['id_paciente'] .'"> '. $value['nome_paciente']. ' </option>';
-								}
-								?>
-							</select>
+						<div class="form-row">
+							<div class="form-group col-sm-12">
+								<label for="selectPaciente">Paciente</label>
+								<select name="nomePaciente" class="form-control" id="selectPaciente" required>
+									<option value="">Selecione</option>
+									<?php  
+									foreach ($result as $value) {
+										echo '<option value="' . $value['id_paciente'] .'"> '. $value['nome_paciente']. ' </option>';
+									}
+									?>
+								</select>
+							</div>
 						</div>
-
-						<div class="form-group">
-							<div class="row">
-								<div class="col-md-4 col-sm-12 mt-4">
-									<div class="btn-group" role="group" arial-label="Grupo de botões">
-
-										<button type="button" id="btnPPS" class="btn btn-primary" data-toggle="modal" data-target="#modalPPS">PPS</button>
-
-										<button type="button" id="btnPap" class="btn btn-primary" data-toggle="modal" data-target="#modalPaP">PaP</button>
-
-										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalHAD">HAD</button>
-
-										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalKPS">KPS</button>	
-
-									</div>
-								</div>
-								<div class="col-sm-12">
-									<label>PPS:</label>
-									<input type="text" name="ResultPPS" id="ResultPPS" class="d-inline-block form-control col-2">
-								</div>
-								<div class="col-sm-12">
-									<label>PaP:</label>
-									<input type="text" name="ResultPaP" id="ResultPaP" class="d-inline-block form-control col-2">
-								</div>
-								<div class="col-sm-12">
-									<label>HAD:</label>
-									A<input type="text" name="ResultHAD_A" id="ResultHAD_A" class="d-inline-block form-control col-2">
-									D<input type="text" name="ResultHAD_D" id="ResultHAD_D" class="d-inline-block form-control col-2">
-								</div>
-								<div class="col-sm-12">
-									<label>KPS:</label>
-									<input type="text" name="ResultKPS" id="ResultKPS" class="d-inline-block form-control col-2">
+						<div class="form-row">
+							<div class="form-group col-sm-12">
+								<div class="btn-group" role="group" arial-label="Grupo de botões">
+									<button type="button" id="btnPPS" class="btn btn-primary" data-toggle="modal" data-target="#modalPPS">PPS</button>
+									<button type="button" id="btnPap" class="btn btn-primary" data-toggle="modal" data-target="#modalPaP">PaP</button>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalHAD">HAD</button>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalKPS">KPS</button>	
 								</div>
 							</div>
 						</div>
-
-						<div class="form-group">
-							<label for="descricaoConsulta">Descrição (Mudar nome)</label>
-							<textarea name="descrcaoConsulta" id="descricaoConsulta" class="form-control" rows="5" required></textarea>
+						<div class="form-row">
+							<div class="form-group col-sm-12">
+								<label>PPS:</label>
+								<input type="text" name="ResultPPS" id="ResultPPS" class="d-inline-block form-control col-xs-2 col-sm-2 col-md-2">
+							</div>
+							<div class="form-group col-sm-12">
+								<label>PaP:</label>
+								<input type="text" name="ResultPaP" id="ResultPaP" class="d-inline-block form-control col-xs-2 col-sm-2 col-md-2">
+							</div>
+							<div class="form-group col-sm-12">
+								<label>KPS:</label>
+								<input type="text" name="ResultKPS" id="ResultKPS" class="d-inline-block form-control col-xs-2 col-sm-2 col-md-2">
+							</div>
+							<div class="form-group col-sm-12">
+								<label>HAD A:</label>
+								<input type="text" name="ResultHAD_A" id="ResultHAD_A" class="d-inline-block form-control col-xs-2 col-sm-2 col-md-2">
+							</div>
+							<div class="form-group col-sm-12">
+								<label>HAD D:</label>
+								<input type="text" name="ResultHAD_D" id="ResultHAD_D" class="d-inline-block form-control col-xs-2 col-sm-2 col-md-2">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-sm-12">
+								<label for="descricaoConsulta">Descrição</label>
+								<textarea name="descrcaoConsulta" id="descricaoConsulta" class="form-control" rows="5" required></textarea>
+							</div>
 						</div>
 						<div class="form-row justify-content-end">
 							<div class="col-md-6 col-sm-12 form-group">
-								<button type="submit" class="form-control btn btn-primary">Enviar</button>	
+								<button type="submit" class="btn btn-primary form-control">Enviar</button>	
 							</div>
 						</div>
 					</form>
-				</div>
-			</div>
+
+				</div><!-- /card-body -->
+			</div><!-- /card -->
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row mb-4">
 		<div class="col-12">
 			<div class="card">
 				<div class="card-header">
@@ -96,43 +102,33 @@ $resultEscala = select($sqlEscala);
 						<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 							<thead>
 								<tr>
-									<th>Col 1</th>
-									<th>Col 2</th>
-									<th>Col 3</th>
-									<th>Col 4</th>
+									<th>Paciente</th>
+									<th>Data</th>
+									<th>Ações</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>Linha02</td>
-									<td>Linha02</td>
-									<td>Linha02</td>
-									<td>Linha02</td>
-								</tr>
-								<tr>
-									<td>Linha03</td>
-									<td>Linha03</td>
-									<td>Linha03</td>
-									<td>Linha03</td>
-								</tr>
-								<tr>
-									<td>Linha04</td>
-									<td>Linha04</td>
-									<td>Linha04</td>
-									<td>Linha04</td>
-								</tr>
-								<tr>
-									<td>Linha05</td>
-									<td>Linha05</td>
-									<td>Linha05</td>
-									<td>Linha05</td>
-								</tr>
-								<tr>
-									<td>Linha02</td>
-									<td>Linha02</td>
-									<td>Linha02</td>
-									<td>Linha02</td>
-								</tr>
+
+								<?php
+									foreach($resulConsulta as $key){
+              							$data = setData($key['data_consulta'], 1);
+
+										echo "<tr>";
+              							echo '<td>' . $key['nome_paciente'] . '</td>';
+              							echo '<td>' . $data . '</td>';
+
+              							echo '<td>
+
+							              <a class="ml-2" href="index.php?pg=detalhesConsulta&id_p='. $key['id_paciente'] .'&id_c='. $key['id_consulta'] .'"><i class="fa fa-chart-line fa-lg text-secondary"></i></a>
+
+							              <a class="ml-2" href="./../classes/controllers/pacienteController.php?acao=delete&id_p=' . $key['id_paciente'] . '"><i class="fa fa-trash fa-lg text-danger" id="deleteRegistro"></i></a>
+							              </td>';
+
+              							echo "</tr>";
+									}
+
+								?>
+
 							</tbody>
 						</table><!-- /table -->
 					</div><!-- /table-responsive -->
@@ -143,7 +139,6 @@ $resultEscala = select($sqlEscala);
 	</div><!-- /row -->
 </div><!-- /container -->
 
-	
 <?php 
 //Incluindo os modais
 include 'modals/modalPPS.php'; 
@@ -152,7 +147,7 @@ include 'modals/modalHAD.php';
 include 'modals/modalKPS.php'; 
 ?>			
 
-<script src="vendor/jquery/jquery.js"></script>
+
 <script type="text/javascript">
 
 	Array.min = function(array) {
@@ -253,7 +248,7 @@ include 'modals/modalKPS.php';
 
 		document.querySelector('#ResultPaP').value = resultPaP;
 		e.preventDefault();
-		$('#modalPaP').modal('hide');		
+		$('#modalPaP').modal('hide');	
 	})// Fim do Envia Pap 
 
 	document.querySelector('#btnEnviarHAD').addEventListener('click', function(e){
@@ -299,6 +294,5 @@ include 'modals/modalKPS.php';
 	    document.querySelector('#ResultKPS').value = respKPS;
 	    e.preventDefault();
 	    $('#modalKPS').modal('hide');
-
 	})// Fim do Envia KPS			
 </script>

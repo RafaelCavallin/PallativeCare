@@ -139,9 +139,7 @@ if($_GET['acao'] == 'update'){
 
               <a class="ml-2" href="index.php?pg=detalhes&id_p=' . $key['id_paciente'] . '"><i class="fa fa-chart-line fa-lg text-secondary"></i></a>
 
-              <a class="ml-2" href="./../classes/controllers/pacienteController.php?acao=delete&id_p=' . $key['id_paciente'] . '"><i class="fa fa-trash fa-lg text-danger" id="deleteRegistro"></i></a>
               </td>';
-
               echo "</tr>";
             }
             ?>
@@ -152,3 +150,23 @@ if($_GET['acao'] == 'update'){
     </div>
   </div> <!-- /Tabela de dados pacientes -->
 </div>
+
+<script type="text/javascript">
+  
+  document.querySelector('deleteRegistro').addEventListener('click', function(e){
+    alert('message?: DOMString')
+  })
+
+  function excluir_registro(e){
+    if(!confirm("Deseja realmente excluir este registro?"))
+         cancelOperation(event);
+  }
+  function cancelOperation(e){
+    var evt = e || window.event;
+    if(evt.preventDefault())
+           evt.preventDefault();
+    else
+      evt.returnValue = false;
+  }
+
+</script>

@@ -44,41 +44,12 @@
       <div class="col-sm-12 col-md-8">
         <div class="card bg-light">
           <div class="card-body">
-            <form action="teste3.php" method="POST">
-
-              <!-- INICIO DADOS -->
-              <div class="row">
-                <div class="col-sm-12 col-md-8 form-group">
-                  <input type="text" class="form-control" name="paciente" placeholder="Paciente" required>
-                </div>
-                <div class="col-sm-12 col-md-4 form-group">
-                  <input type="text" class="form-control" name="prontuario" placeholder="Prontuário" required>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12 col-md-8 form-group">
-                  <input type="text" class="form-control" name="cuidador" placeholder="Cuidador" required>
-                </div>
-                <div class="col-sm-12 col-md-4 form-group">
-                  <input type="text" class="form-control" name="idade" placeholder="Idade" required>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12 col-md-6 form-group">
-                  <input type="text" class="form-control" name="grauParentesco" placeholder="Grau de parentesco" required>
-                </div>
-                <div class="col-sm-12 col-md-6 form-group">
-                  <input type="text" class="form-control" name="escolaridade" placeholder="Escolaridade" required>
-                </div>
-                <!-- A DATA É REGISTRADA AUTOMETICAMENTE -->
-              </div><!-- FIM DADOS -->
+            <form action="#" method="POST">
 
               <!-- INICIO QUESTÃO TEMPO -->
-              <div class="form-group mt-4">  
+              <div class="form-group mt-2">  
                 <h5>1. Sente que, por causa do tempo que utiliza com o seu familiar/doente já não tem tempo suficiente para você mesmo?</h5>
-                <select name="selectTempo" class="form-control">
+                <select name="selectTempo" id="selectTempo" class="form-control" required="true">
                   <option value="">Selecione</option>
                   <option value="1">Nunca</option>
                   <option value="2">Quase nunca</option>
@@ -91,7 +62,7 @@
               <!-- INICIO QUESTÃO STRESS -->
               <div class="form-group mt-3">  
                 <h5>2. Sente-se estressado/ angustiado por ter que cuidar do seu familiar/ doente e ao mesmo tempo ser responsável por outras tarefas? (ex. Cuidar de outros familiares, ter que trabalhar).</h5>
-                <select name="selectStress" class="form-control">
+                <select name="selectStress" id="selectStress" class="form-control" required="true">
                   <option value="">Selecione</option>
                   <option value="1">Nunca</option>
                   <option value="2">Quase nunca</option>
@@ -104,7 +75,7 @@
               <!-- INICIO QUESTÃO AMIGOS -->
               <div class="form-group mt-3">  
                 <h5>3. Acha que a situação atual afeta a sua relação com amigos ou outros elementos da família de uma forma negativa?</h5>
-                <select name="selectFamilia" class="form-control">
+                <select name="selectFamilia" id="selectFamilia" class="form-control" required="true">
                   <option value="">Selecione</option>
                   <option value="1">Nunca</option>
                   <option value="2">Quase nunca</option>
@@ -117,7 +88,7 @@
               <!-- INICIO QUESTÃO EXAUSTO -->
               <div class="form-group mt-3">  
                 <h5>4. Sente-se exausto quando tem de estar junto do seu familiar/ doente?</h5>
-                <select name="selectExausto" class="form-control">
+                <select name="selectExausto" id="selectExausto" class="form-control" required="true">
                   <option value="">Selecione</option>
                   <option value="1">Nunca</option>
                   <option value="2">Quase nunca</option>
@@ -130,7 +101,7 @@
               <!-- INICIO QUESTÃO SAÚDE -->
               <div class="form-group mt-3">  
                 <h5>5. Sente que sua saúde tem-se visto afetada por ter que cuidar do seu familiar/ doente?</h5>
-                <select name="selectSaude" class="form-control">
+                <select name="selectSaude" id="selectSaude" class="form-control" required="true">
                   <option value="">Selecione</option>
                   <option value="1">Nunca</option>
                   <option value="2">Quase nunca</option>
@@ -143,7 +114,7 @@
               <!-- INICIO QUESTÃO CONTROLE -->
               <div class="form-group mt-3">  
                 <h5>6. Sente que tem perdido o controle da sua vida desde que a doença o seu familiar/ doente se manifestou?</h5>
-                <select name="selectControle" class="form-control">
+                <select name="selectControle" id="selectControle" class="form-control" required="true">
                   <option value="">Selecione</option>
                   <option value="1">Nunca</option>
                   <option value="2">Quase nunca</option>
@@ -156,7 +127,7 @@
               <!-- INICIO QUESTÃO SOBRECARREGADO -->
               <div class="form-group mt-3">  
                 <h5>7. No geral, sente-se muito sobrecarregado por ter que cuidar do seu familiar/ doente?</h5>
-                <select name="selectSobrecarregado" class="form-control">
+                <select name="selectSobrecarregado" id="selectSobrecarregado" class="form-control" required="true">
                   <option value="">Selecione</option>
                   <option value="1">Nunca</option>
                   <option value="2">Quase nunca</option>
@@ -167,7 +138,7 @@
               </div><!-- FIM QUESTÃO SOBRECARREGADO -->
 
               <div class="form-group mt-3">
-                <input type="submit" class="btn btn-primary col-md-12" value="Enviar">
+                <input type="submit" id="enviarZarit" class="btn btn-primary col-md-12" value="Enviar">
               </div>
             </form> 
           </div><!-- /card-body -->
@@ -177,3 +148,100 @@
 
   </div><!-- /container -->
 </section>  
+
+<!-- Modal -->
+<div class="modal fade" id="ResultZarit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Resultado Zarit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2 class="display-3 text-center" id="resultado"></h2>
+        <p class="lead text-center" id="msg"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="reset" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+    
+  document.querySelector('#enviarZarit').addEventListener('click', function(e){
+
+    if($('#selectTempo option:selected').val() == ""){
+      return false
+    }else{
+      var tempo = parseInt($('#selectTempo option:selected').val());
+    }
+
+    if($('#selectStress option:selected').val() == ""){
+      return false
+    }else{
+      var stress = parseInt($('#selectStress option:selected').val());
+    }
+
+    if($('#selectFamilia option:selected').val() == ""){
+      return false
+    }else{
+      var familia = parseInt($('#selectFamilia option:selected').val());
+    }
+
+    if($('#selectExausto option:selected').val() == ""){
+      return false
+    }else{
+      var exausto = parseInt($('#selectExausto option:selected').val());
+    }
+
+    if($('#selectSaude option:selected').val() == ""){
+      return false
+    }else{
+      var saude = parseInt($('#selectSaude option:selected').val());
+    }
+
+    if($('#selectControle option:selected').val() == ""){
+      return false
+    }else{
+      var controle = parseInt($('#selectControle option:selected').val());
+    }
+
+    if($('#selectSobrecarregado option:selected').val() == ""){
+      return false
+    }else{
+      var sobrecarregado = parseInt($('#selectSobrecarregado option:selected').val());
+    }
+
+    var total = tempo + stress + familia + exausto + saude + controle + sobrecarregado;
+
+    if(total <= 14){
+      var msg = "Sobrecarga leve"
+    }else if((total >= 15) && (total <=21)){
+      var msg = "Sobrecarga moderada"
+    }else{
+      var msg = "Sobrecarga grave"
+    }
+
+    $('#ResultZarit').modal('show');
+    e.preventDefault()
+
+    document.getElementById('resultado').innerHTML = total
+    document.getElementById('msg').innerHTML = msg
+
+    $('#selectTempo').prop('selectedIndex',0)
+    $('#selectStress').prop('selectedIndex',0)
+    $('#selectFamilia').prop('selectedIndex',0)
+    $('#selectExausto').prop('selectedIndex',0)
+    $('#selectSaude').prop('selectedIndex',0)
+    $('#selectControle').prop('selectedIndex',0)
+    $('#selectSobrecarregado').prop('selectedIndex',0)
+
+
+  })
+
+</script>

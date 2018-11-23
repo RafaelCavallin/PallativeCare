@@ -44,53 +44,6 @@ session_start();
 
         <div class="container-fluid">
 
-            <?php
-                // MENSAGEM APÓS CADASTRO/EXCLUSÃO
-                    if (isset($_GET['msg']) AND $_GET['msg'] == 'insert') {
-                        $msg = '<div id="alerta" class="alert alert-primary mt-3" role="alert">
-                                    Cadastrado com Sucesso!
-                                </div>';
-
-                    }elseif (isset($_GET['msg']) AND $_GET['msg'] == 'del') {
-                        $msg = '<div id="alerta" class="alert alert-success mt-3" role="alert">
-                                    Excluido com Sucesso!
-                                </div>';
-
-                    }elseif (isset($_GET['msg']) AND $_GET['msg'] == 'up') {
-                        $msg = '<div id="alerta" class="alert alert-success mt-3" role="alert">
-                                    Alterado com Sucesso!
-                                </div>';
-
-                    }elseif (isset($_GET['msg']) AND $_GET['msg'] == 'sti') {
-                        $msg = '<div id="alerta" class="alert alert-danger mt-3" role="alert">
-                                    Senha atual incorreta. Senha não alterada!
-                                </div>';
-
-                    }elseif (isset($_GET['msg']) AND $_GET['msg'] == 'spi') {
-                        $msg = '<div id="alerta" class="alert alert-danger mt-3" role="alert">
-                                    Senhas precisam ser iguais. Senha não alterada!
-                                </div>';
-
-                    }elseif (isset($_GET['msg']) AND $_GET['msg'] == 'ptc') {
-                        $msg = '<div id="alerta" class="alert alert-danger mt-3" role="alert">
-                                    Preencha todos os campos. Senha não alterada!
-                                </div>';
-
-                    }elseif (isset($_GET['msg']) AND $_GET['msg'] == 'erro') {
-                        $msg = '<div id="alerta" class="alert alert-danger mt-3" role="alert">
-                                    Erro ao realizar a ação!
-                                </div>';
-
-                    }elseif (isset($_GET['msg']) AND $_GET['msg'] == 'reativado') {
-                        $msg = '<div id="alerta" class="alert alert-success mt-3" role="alert">
-                                    Paciente reativado!
-                                </div>';
-                    }else{
-                        $msg = "";
-                    }
-                    echo $msg;  
-                ?>   
-
           <?php 
             // CARREGAMENTO DAS PÁGINAS
             if (isset($_GET['pg']) and !empty($_GET['pg'])) {
@@ -137,15 +90,6 @@ session_start();
     <!-- Demo scripts for this page-->
     <script src="js/demo/datatables-demo.js"></script>
     <script src="js/demo/chart-area-demo.js"></script>
-
-    <!-- Script para esconder a mensagem -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            setTimeout(function () {
-                $('#alerta').fadeOut(1000);
-            }, 3000);
-        });
-    </script>
 
   </body>
 

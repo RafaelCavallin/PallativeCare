@@ -8,12 +8,12 @@
 
 					<div class="card bg-light">
 						<div class="card-body">
-							<form name="formHAD" action="#" method="post">
+							<form name="formHAD" id="formHAD" action="#" method="post">
 
 								<!-- QUESTÃO TENSO COTRAÍDO -->
 								<div class="form-group mb-3">
 									<h5>A - Eu me sinto tenso ou contraído:</h5>
-									<select class="form-control col-md-12 col-sm-12" id="AselectTensoContraido" required>
+									<select id="AselectTensoContraido" class="form-control col-md-12 col-sm-12" required>
 										<option value="">Selecione</option>
 										<option value="3">A maior parte do tempo</option>
 										<option value="2">Boa parte do tempo</option>

@@ -13,11 +13,11 @@
 
 				<div class="card bg-light">
 					<div class="card-body">
-						<form action="teste.php" method="post">
+						<form action="#" method="post">
 
 							<div class="form-group">
 								<label class="lead">Deambulação</label>
-								<select name="deambulacao" class="form-control">
+								<select id="deambulacao" class="form-control" required="true">
 									<option value="">Selecione</option>
 									<option value="100">Completa</option>
 									<option value="70">Reduzida</option>
@@ -30,7 +30,7 @@
 
 							<div class="form-group">
 								<label class="lead">Atividade e evidência da doença</label>
-								<select name="atividadeEvidencia" class="form-control">
+								<select id="atividadeEvidencia" class="form-control" required="true">
 									<option value="">Selecione</option>
 									<option value="100">Atividade normal e trabalho; sem evidência de doença</option>	
 									<option value="90">Atividade normal e trabalho; alguma evidência de doença</option>
@@ -45,7 +45,7 @@
 
 							<div class="form-group">
 								<label class="lead">Autocuidado</label>
-								<select name="autocuidado" class="form-control">
+								<select id="autocuidado" class="form-control" required="true">
 									<option value="">Selecione</option>
 									<option value="100">Completo</option>	
 									<option value="60">Assistência ocasional.</option>	
@@ -57,7 +57,7 @@
 
 							<div class="form-group">
 								<label class="lead">Ingesta</label>
-								<select name="ingesta" class="form-control">
+								<select id="ingesta" class="form-control" required="true">
 									<option value="">Selecione</option>	
 									<option value="100">Normal</option>	
 									<option value="80">Normal ou reduzida</option>	
@@ -68,7 +68,7 @@
 
 							<div class="form-group">
 								<label class="lead">Nível da Consciência</label>
-								<select name="consciencia" class="form-control">
+								<select id="consciencia" class="form-control" required="true">
 									<option value="">Selecione</option>	
 									<option value="100">Completa</option>	
 									<option value="60">Completa ou períodos de confusão</option>	
@@ -78,7 +78,7 @@
 							</div><!-- /Nível da Consciência -->
 
 							<div class="mt-3">
-								<button type="submit" class="btn btn-primary btn-block">Enviar</button>
+								<button type="submit" id="enviarPPS" class="btn btn-primary btn-block">Enviar</button>
 							</div><!-- /Nível da Consciência -->
 						</form>
 					</div>
@@ -116,6 +116,55 @@
 	</div>
 </section>
 
+<!-- Modal -->
+<div class="modal fade" id="ResultPPS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Resultado PPS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2 class="display-3 text-center" id="resultado"></h2>
+      </div>
+      <div class="modal-footer">
+        <button type="reset" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<script type="text/javascript">
 
+	Array.min = function(array) {
+    	return Math.min.apply(Math, array);
+	};
 
+  	document.querySelector('#enviarPPS').addEventListener('click', function(e){
+		
+		var deambulacao = document.getElementById('deambulacao').value
+		var atividadeEvidencia = document.getElementById('atividadeEvidencia').value
+		var autocuidado = document.getElementById('autocuidado').value
+		var ingesta = document.getElementById('ingesta').value
+		var consciencia = document.getElementById('consciencia').value
+
+		if ((deambulacao == "") || (atividadeEvidencia == "") || (autocuidado == "") || (ingesta == "") || (consciencia == "")){
+			return false;
+		}else{
+			var ArrayResult = [deambulacao, atividadeEvidencia, autocuidado, ingesta, consciencia]
+			document.getElementById('resultado').innerHTML = Array.min(ArrayResult);
+			$('#ResultPPS').modal('show');
+			e.preventDefault()
+			
+			$('#deambulacao').prop('selectedIndex',0)
+			$('#atividadeEvidencia').prop('selectedIndex',0)
+			$('#autocuidado').prop('selectedIndex',0)
+			$('#ingesta').prop('selectedIndex',0)
+			$('#consciencia').prop('selectedIndex',0)
+			
+		}
+
+	})// Fim do Envia PPS
+</script>

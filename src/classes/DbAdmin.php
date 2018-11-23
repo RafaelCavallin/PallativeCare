@@ -1,7 +1,7 @@
 <?php
 include_once ("Conexao.php");
 
-    function insert($sql, $data){
+    function executar($sql, $data){
         $link = Conexao::getInstance();
 
             $stmt = $link->prepare($sql);
@@ -34,6 +34,7 @@ include_once ("Conexao.php");
             $result = $link->query($sql);
 
             return $result->fetchAll(PDO::FETCH_ASSOC);
+        }
     }   
 
     // Recebe uma data e uma opção. A opção serve para informar como o retorno será feito, para o banco para mostrar ao usuário.
@@ -47,10 +48,8 @@ include_once ("Conexao.php");
 
             case '1':
                 $dataArray = explode("-", $data);
-                $data = $dataArray[0] . "/" . $dataArray[1] . "/" .$dataArray[2];
+                $data = $dataArray[2] . "/" . $dataArray[1] . "/" .$dataArray[0];
             break;
         }
         return $data;
     }
-
-}

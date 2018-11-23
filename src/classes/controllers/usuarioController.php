@@ -24,7 +24,7 @@ switch ($acao) {
 					$data = array($_POST['nome'],  $_POST['email'], md5($_POST['senha']));
 					$sql = "INSERT INTO usuario (nome_usuario, email, senha) VALUES (?, ?, ?)";
 
-					if (insert($sql, $data)) {
+					if (executar($sql, $data)) {
 						header('Location:../../admin/index.php');
 					}else {
 						echo "Deu errado";

@@ -1,22 +1,37 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-      <a class="navbar-brand mr-1" href="index.php">Palliative Care</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+  <a class="navbar-brand" href="index.php?pg=home">Palliative Care</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-      <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
-        <i class="fas fa-bars"></i>
-      </button>
+  <div class="collapse navbar-collapse ml-2" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
 
-      <!-- Navbar -->
-      <ul class="navbar-nav ml-auto ">        
-        <li class="nav-item dropdown no-arrow">
-          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-user-circle fa-fw"></i>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-           <!--  <a class="dropdown-item" href="index.php?pg=perfil">Perfil</a> -->
-            
-            <a class="dropdown-item" href="../classes/controllers/loginController.php?acao=logout">Sair</a>
-          </div>
-        </li>
-      </ul>
+      <li class="nav-item">
+        <a class="nav-link" href="index.php?pg=pacientes">
+          <i class="fas fa-user-circle fa-fw"></i>
+          <span>Pacientes Ativos</span>
+        </a>
+      </li>
 
+      <li class="nav-item">
+        <a class="nav-link" href="index.php?pg=pacientesInativos">
+          <i class="fas fa-user-circle fa-fw"></i>
+          <span>Pacientes Inativos</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.php?pg=consultas">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Consultas</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="../classes/controllers/loginController.php?acao=logout">Sair</a>
+      </li>
+
+    </ul>
+  </div>
 </nav>

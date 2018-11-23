@@ -1,3 +1,27 @@
+footer.sticky-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #e9ecef;
+}
+
+footer.sticky-footer .copyright {
+  line-height: 1;
+  font-size: 0.8rem;
+}
+
+footer.sticky-footer {
+  width: 100%;
+}
+
+.wrapper{
+  min-height: 800px; 
+}
 
 .navbar {
   background-color: #89C4F4; }
